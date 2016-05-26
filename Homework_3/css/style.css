@@ -8,6 +8,9 @@ body {
   padding: 0 46px;
   width: 968px;
   background: #fff;
+  -webkit-box-shadow: -1px -1px 9px 6px rgba(0,0,0,0.16);
+  -moz-box-shadow: -1px -1px 9px 6px rgba(0,0,0,0.16);
+  box-shadow: -1px -1px 9px 6px rgba(0,0,0,0.16);
 }
 
 /* HEADER */
@@ -101,7 +104,7 @@ body {
 }
 
 .product-description {
-  padding: 30px 0 0 22px;
+  padding: 30px 22px 0 22px;
   color: #2c2c2c;
   font-size: 13px;
   line-height: 21px;
@@ -109,15 +112,29 @@ body {
 
 /* FOOTER */
 .footer {
-  position: relative;
-  overflow: hidden;
+  padding: 50px 0;
 }
 
 .footer-menu {
-  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+  background: #e1e1e1;
 }
 
 .footer-menu li {
   float: left;
   list-style: none;
+  line-height: 50px;
+}
+
+.footer-menu .copyrights {
+  float: right;
+  padding-right: 26px;
+}
+
+.footer-menu a {
+  display: block;
+  padding: 0 50px;
+  color: #2c2c2c;
+  text-decoration: none;
 }

@@ -5,6 +5,14 @@
     <title>Fitness</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+	      $(document).ready(function() {
+		        $(".fancybox").fancybox();
+	      });
+    </script>
   </head>
   <body>
 
@@ -39,7 +47,9 @@
         <div class="product">
 
           <div class="product-image">
-            <img src="img/bike.jpg" alt="product" />
+            <a href="img/bike_big.jpg" class="fancybox">
+              <img src="img/bike.jpg" alt="product" />
+            </a>
           </div>
 
           <div class="product-description">

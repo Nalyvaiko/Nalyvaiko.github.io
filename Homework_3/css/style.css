@@ -138,3 +138,7 @@ body {
   color: #2c2c2c;
   text-decoration: none;
 }
+
+.footer-menu a:hover {
+  text-decoration:underline;
+}

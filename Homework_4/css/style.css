@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-  margin: 38px auto;
+  margin: 38px auto 0;
   width: 1000px;
   height: 988px;
   background: #ffffff;
@@ -37,13 +37,13 @@ body {
 .content{
   display: block;
   margin: auto;
-  width: 800px;
+  width: 1000px;
   overflow: hidden;
 }
 
 .leftColumn{
   display: inline;
-  width: 25%;
+  width: 210px;
   float: left;
   background: red;
   padding-bottom: 20000px;
@@ -52,7 +52,7 @@ body {
 
 .centerColumn{
   display: inline;
-  width: 50%;
+  width: 580px;
   float: left;
   background: yellow;
   padding-bottom: 20000px;
@@ -61,7 +61,7 @@ body {
 
 .rightColumn{
   display: inline;
-  width: 25%;
+  width: 210px;
   float: right;
   background: blue;
   padding-bottom: 20000px;
@@ -71,6 +71,8 @@ body {
 /* FOOTER */
 .footer {
   display: block;
+  margin: 8px;
   font: 12px "Tahoma Regular";
+  text-align: center;
   color: #cee3ec;
 }

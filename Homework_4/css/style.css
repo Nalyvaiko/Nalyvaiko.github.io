@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.header{
+  display: block;
+  background: pink;
+}
+
+.footer{
+  display: block;
+  background: skyblue;
+}
+
+.content{
+  display: block;
+  margin: auto;
+  width: 800px;
+  overflow: hidden;
+}
+
+.leftColumn{
+  display: inline;
+  width: 25%;
+  float: left;
+  background: red;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+
+.centerColumn{
+  display: inline;
+  width: 50%;
+  float: left;
+  background: yellow;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+
+.rightColumn{
+  display: inline;
+  width: 25%;
+  float: right;
+  background: blue;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}

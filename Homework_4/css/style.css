@@ -1,20 +1,38 @@
-*{
+body {
+  background-image: url('../img/background.jpg');
+}
+
+.wrapper {
+  margin: 38px auto;
+  width: 1000px;
+  height: 988px;
+  background: #ffffff;
+}
+
+/* HEADER */
+.header {
+  display: block;
+  height: 175px;
+  margin-left: 28px;
+}
+
+.logo-image {
   margin: 0;
-  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 283px;
+  height: 164px;
 }
 
-
-
-.header{
-  display: block;
-  background: pink;
+.logo-text {
+  position: absolute;
+  top: 142px;
+  right: 1240px;
+  font: 12px "Tahoma Regular";
+  color: #128aa7;
 }
 
-.footer{
-  display: block;
-  background: skyblue;
-}
-
+/* CONTENT */
 .content{
   display: block;
   margin: auto;
@@ -48,3 +66,5 @@
   padding-bottom: 20000px;
   margin-bottom: -20000px;
 }
+
+/* FOOTER */

@@ -18,20 +18,33 @@ body {
 }
 
 .logo-image {
+  display: inline-block;
   margin: 0;
-  position: relative;
-  overflow: hidden;
   width: 283px;
   height: 164px;
+  background-image: url('../img/logo.png');
 }
 
 .logo-text {
-  position: absolute;
-  top: 142px;
-  right: 1240px;
+  padding: 100px 0 0 75px;
   font: 12px "Tahoma Regular";
   color: #128aa7;
 }
+
+.box{
+  display: inline-block;
+}
+
+/* countries menu */
+.countries{
+  list-style: none;
+}
+
+.countries li{
+  display: inline;
+  margin-right: 15px;
+}
+
 
 /* CONTENT */
 .content{

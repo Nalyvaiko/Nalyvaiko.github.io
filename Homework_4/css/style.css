@@ -10,7 +10,8 @@ body {
   border-bottom: 3px solid #031d28;
 }
 
-/* HEADER */
+/* --------------- HEADER --------------- */
+/* logo part */
 .header {
   display: block;
   height: 175px;
@@ -31,22 +32,68 @@ body {
   color: #128aa7;
 }
 
+/* right part */
 .box{
+  margin: 10px 28px 0 0;
+  width: 520px;
   display: inline-block;
+  float: right;
+}
+
+.box .contacts{
+  float: right;
+  height: 60px;
+  width: 120px;
+  font: 12px "Tahoma Regular";
+  color: #128aa7;
 }
 
 /* countries menu */
-.countries{
+.box .countries{
+  float: right;
   list-style: none;
+  margin: 35px 0 0 0;
 }
 
-.countries li{
-  display: inline;
-  margin-right: 15px;
+.box .countries li{
+  float: left;
+  margin-right: 12px;
+}
+
+.box .countries li a{
+  display: block;;
+  text-align: center;
+  padding-top: 45px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 58px;
+  /*height: 42px;*/
+  font: 12px "Tahoma Regular";
+  color: #128aa7;
+}
+
+.countries .india a{
+  background-image: url('../img/india.png');
+}
+.countries .nepal a{
+  background-image: url('../img/nepal.png');
+}
+.countries .tibet a{
+  background-image: url('../img/tibet.png');
+}
+.countries .bhutan a{
+  background-image: url('../img/bhutan.png');
+}
+.countries .sri-lanka a{
+  background-image: url('../img/sri-lanka.png');
+}
+.countries .maldives a{
+  background-image: url('../img/maldives.png');
 }
 
 
-/* CONTENT */
+
+/* ----------- CONTENT ------------ */
 .content{
   display: block;
   margin: auto;
@@ -81,7 +128,7 @@ body {
   margin-bottom: -20000px;
 }
 
-/* FOOTER */
+/* --------------- FOOTER --------------- */
 .footer {
   display: block;
   margin: 8px;

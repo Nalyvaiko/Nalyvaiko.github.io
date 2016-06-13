@@ -11,7 +11,7 @@ h1{
 }
 
 p{
-  line-height: 22px;
+  line-height: 23px;
   text-align: center;
 }
 
@@ -132,10 +132,10 @@ p{
 }
 
 .box-main-menu{
-  margin-bottom: 1px; 
-  -webkit-box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.71);
-  -moz-box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.71);
-  box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.71);
+  margin-bottom: 2px;
+  -webkit-box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.74);
+  -moz-box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.74);
+  box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.74);
 }
 
 .submenu{
@@ -153,6 +153,33 @@ p{
   padding: 6px 35px;
 }
 
+.main-menu>li:nth-child(2):after{
+  content: '';
+  position: absolute;
+  left: 123px;
+  bottom: 8px;
+  border: 4px solid transparent;
+  border-top: 4px solid #fff;
+}
+
+.main-menu>li:nth-child(3):after{
+  content: '';
+  position: absolute;
+  left: 85px;
+  bottom: 8px;
+  border: 4px solid transparent;
+  border-top: 4px solid #fff;
+}
+
+.main-menu>li:nth-child(4):after{
+  content: '';
+  position: absolute;
+  left: 108px;
+  bottom: 8px;
+  border: 4px solid transparent;
+  border-top: 4px solid #fff;
+}
+
 .main-menu>li:first-child{
   padding: 6px 35px 6px 63px;
 }
@@ -164,6 +191,11 @@ p{
   font: 14px "Tahoma Regular";
   color: #fff;
   text-decoration: none;
+}
+
+.submenu{
+  position: absolute;
+  left: 15px;
 }
 
 .submenu li a{

@@ -1,3 +1,7 @@
+html{
+  margin-top: -38px;
+}
+
 body {
   background-image: url('../img/background.jpg');
 }
@@ -7,11 +11,6 @@ h1{
   font-weight: bold;
   font-family: "Tahoma Regular";
   line-height: 36px;
-  text-align: center;
-}
-
-p{
-  line-height: 23px;
   text-align: center;
 }
 
@@ -227,6 +226,11 @@ p{
   width: 1000px;
   height: 546px;
   overflow: hidden;
+}
+
+.leftColumn, .rightColumn{
+  line-height: 23px;
+  text-align: center;
 }
 
 .leftColumn{

@@ -239,6 +239,7 @@ h1{
   background: #edeef0;
   padding-bottom: 20000px;
   margin-bottom: -20000px;
+  border-right: 1px solid #c7cacf;
 }
 
 .centerColumn{
@@ -257,6 +258,7 @@ h1{
   background: #edeef0;
   padding-bottom: 20000px;
   margin-bottom: -20000px;
+  border-left: 1px solid #c7cacf;
 }
 
 /* --------------- FOOTER --------------- */

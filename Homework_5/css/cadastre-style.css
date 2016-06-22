@@ -77,7 +77,7 @@ body {
   text-decoration: underline;
 }
 
-.menu.second-menu a:hover{
+.menu.second-menu a:hover, .btn-create {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%,
     rgba(0, 0, 0, 0.09) 20%,
     rgba(255, 255, 255, 0.09) 100%);
@@ -107,6 +107,202 @@ body {
   background-repeat: no-repeat;
 }
 
+.form-wrap {
+  height: 613px;
+  width: 560px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -306px 0 0 -280px;
+  background-color: transparent;
+}
+
+.form-top {
+  margin: 0;
+  height: 62px;
+  font-size: 24px;
+  line-height: 62px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.form {
+  display: block;
+  margin: 2px 0 0 0;
+  height: 560px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.fbutton {
+  padding: 36px 0;
+}
+
+.fbtn {
+  width: 276px;
+  height: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 3px;
+
+  border: none;
+  background: rgba(62,86,148,1);
+  background: -moz-linear-gradient(top, rgba(62,86,148,1) 0%, rgba(55,79,146,1) 32%, rgba(49,72,128,1) 67%, rgba(52,65,100,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(62,86,148,1)), color-stop(32%, rgba(55,79,146,1)), color-stop(67%, rgba(49,72,128,1)), color-stop(100%, rgba(52,65,100,1)));
+  background: -webkit-linear-gradient(top, rgba(62,86,148,1) 0%, rgba(55,79,146,1) 32%, rgba(49,72,128,1) 67%, rgba(52,65,100,1) 100%);
+  background: -o-linear-gradient(top, rgba(62,86,148,1) 0%, rgba(55,79,146,1) 32%, rgba(49,72,128,1) 67%, rgba(52,65,100,1) 100%);
+  background: -ms-linear-gradient(top, rgba(62,86,148,1) 0%, rgba(55,79,146,1) 32%, rgba(49,72,128,1) 67%, rgba(52,65,100,1) 100%);
+  background: linear-gradient(to bottom, rgba(62,86,148,1) 0%, rgba(55,79,146,1) 32%, rgba(49,72,128,1) 67%, rgba(52,65,100,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5694', endColorstr='#344164', GradientType=0 );
+}
+
+.fbtn span {
+  font-weight: 700;
+}
+
+.fbtn:active {
+  border: none;
+  -moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  -webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  position: relative;
+  top: 1px;
+}
+
+/* FACEBOOK letter F*/
+.fbtn::before {
+  content: "f";
+  font-size: 24px;
+  font-weight: 700;
+  float: left;
+  padding: 0 18px 0 16px;
+
+  -moz-box-shadow: 1px 0 0 rgba(32,58,117,.5), 2px 0 0 rgba(77,102,166,.8);
+  -webkit-box-shadow: 1px 0 0 rgba(32,58,117,.5), 2px 0 0 rgba(77,102,166,.8);
+  box-shadow: 1px 0 0 rgba(32,58,117,.5), 2px 0 0 rgba(77,102,166,.8);
+  -moz-border-radius: .15em 0 0 .15em;
+  -webkit-border-radius: .15em 0 0 .15em;
+  border-radius: .15em 0 0 .15em;
+}
+/* FACEBOOK Arrow > Hexadecimal */
+.fbtn::after {
+  content: '\276f';
+  font-size: 16px;
+  float: right;
+  padding: 0 30px 0 0;
+}
+
+.line {
+  overflow: hidden;
+  margin: auto;
+  width: 270px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #999;
+}
+
+.line::before, .line::after {
+  /* Обязательно указываем пустое свойство content,
+  ** иначе псевдоэлементы не появятся на сайте */
+  content: "";
+  /* Указываем что наши линии будут строчно-блочные и
+  ** выравнивание по высоте - по центру */
+  display: inline-block;
+  vertical-align: middle;
+  /* Задаем ширину 100% и выбираем высоту линии */
+  width: 100%;
+  height: 2px;
+
+  /* Добавляем цвет для линии */
+  background-color: background: rgba(102,102,102,1);
+  background: -moz-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102,102,102,1)), color-stop(100%, rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(0,0,0,1) 100%);
+  background: -ms-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(102,102,102,1) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000', GradientType=0 );
+
+  /* Добавляем пседоэлемантам возможность изменить
+  ** позицию линии, для создания отступов от текста */
+  position: relative;
+}
+
+.line:before {
+  /* Смещаем левую линию на 100% влево, чтобы линия
+  ** встала рядом с текстом слева */
+  margin-left: -100%;
+  /* Указываем в пикселях отступ линии от текста*/
+  left: -14px;
+}
+.line:after {
+  /* Смещаем правую линию на 100% вправо, чтобы
+  ** линия встала рядом с текстом справа */
+  margin-right: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  right: -12px;
+}
+
+input[type="text"], input[type="password"] {
+  height: 36px;
+  width: 258px;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 18px;
+  color: #fff;
+  background-color: #000;
+  border: transparent;
+  border-bottom: 1px solid #484848;
+}
+
+.txtfield {
+  padding-top: 19px;
+}
+
+.inputs:focus {
+  background-color: #1b5288;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(104,155,204,1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(104,155,204,1);
+  box-shadow: 0px 0px 15px 0px rgba(104,155,204,1);
+}
+
+.chkbox {
+  margin-right: 60px;
+  padding: 21px 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.cbtn {
+  width: 151px;
+  height: 37px;
+  margin: auto;
+  background-color: transparent;
+  margin-bottom: 12px;
+}
+
+.btn-create {
+  width: 151px;
+  height: 37px;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.term {
+  width: 310px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+}
+
+/* Шум */
 header {
   overflow: hidden;
   height: 36px;

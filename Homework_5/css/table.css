@@ -17,14 +17,14 @@ td {
   width: 180px;
 }
 
-.second td {
+/*.second td {
   height: 180px;
-}
+}*/
 
-.third td, .fourth td {
+/*.third td, .fourth td {
   height: 180px;
   width: 90px;
-}
+}*/
 
 .yellow {
   background-color: yellow;

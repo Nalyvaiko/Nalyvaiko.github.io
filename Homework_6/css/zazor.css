@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*body {
+  background: #282828;
+  font-family: "Lucida Sans Unicode Regular", Arial, sans-serif;
+}*/
+
+body {
+  background: #282828;
+  background-image: url('../img/maket.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.wrapper {
+  width: 1000px;
+  height: 1309px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid black;
+  opacity: .5;
+}
+
+.topHeader {
+  display: inline-block;
+}

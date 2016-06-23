@@ -13,6 +13,7 @@ body {
   background-image: url('../img/maket.png');
   background-position: center;
   background-repeat: no-repeat;
+  font-family: "Lucida Sans Unicode Regular", Arial, sans-serif;
 }
 
 
@@ -26,6 +27,16 @@ body {
   opacity: .5;
 }
 
+header {
+  width: 922px;
+  height: 328px;
+  margin: 15px 45px;
+  overflow: hidden;
+}
+
 .topHeader {
   display: inline-block;
+  padding: 7px 0;
+  font-size: 18px;
+  line-height: 25px;
 }

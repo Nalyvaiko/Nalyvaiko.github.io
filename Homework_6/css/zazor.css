@@ -1,7 +1,7 @@
-* {
+/** {
   margin: 0;
   padding: 0;
-}
+}*/
 
 /*body {
   background: #282828;
@@ -16,8 +16,6 @@ body {
   font-family: "Lucida Sans Unicode Regular", Arial, sans-serif;
 }
 
-
-
 .wrapper {
   width: 1000px;
   height: 1309px;
@@ -30,17 +28,21 @@ body {
 header {
   width: 922px;
   height: 328px;
-  margin: 15px 45px;
+  margin: 9px 0 0 44px;
   overflow: hidden;
 }
 
 .topHeader {
   display: inline-block;
-  padding: 7px 0;
+  padding: 20px 0 0 0;
   font-size: 18px;
   line-height: 25px;
 }
 
 .telephone::before {
-  
+
+}
+
+header h1 {
+  margin: 0 0 0 0;
 }

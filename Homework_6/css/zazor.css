@@ -43,6 +43,37 @@ header {
 
 }
 
-header h1 {
+.bottomHeader {
+  width: 99%;
+  height: 11%;
+  margin: 1px 0 0 0;
+  padding: 0 0 0 0;
+  border: 1px solid black;
+}
+
+nav {
+  width: 500px;
+  height: 50px;
+  padding-left: 94px;
+}
+
+.main-menu {
   margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.main-menu li {
+  list-style: none;
+  float: left;
+  margin: 0 0 0 0;
+}
+
+.main-menu li a {
+  display: block;
+  margin: 1px;
+  padding: 0 0 0 0;
+  color: #000;
+  line-height: 34px;
+  text-decoration: none;
+  font-size: 13px;
 }

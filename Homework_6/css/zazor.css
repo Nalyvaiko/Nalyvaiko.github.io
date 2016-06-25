@@ -1,31 +1,70 @@
-/** {
+* {
   margin: 0;
   padding: 0;
-}*/
-
-/*body {
-  background: #282828;
-  font-family: "Lucida Sans Unicode Regular", Arial, sans-serif;
-}*/
+}
 
 body {
+  font-family: "Lucida Sans Unicode Regular", Arial, sans-serif;
+}
+
+/*body {
   background: #282828;
   background-image: url('../img/maket.png');
   background-position: center;
   background-repeat: no-repeat;
   font-family: "Lucida Sans Unicode Regular", Arial, sans-serif;
-}
+}*/
 
 .wrapper {
-  width: 1000px;
-  height: 1309px;
-  margin: auto;
-  background: #fff;
-  border: 1px solid black;
-  opacity: .5;
+  width: 909px;
+  margin: 0 auto;
 }
 
-header {
+.header {
+  width: 100%;
+}
+
+.phone-image {
+  float: left;
+  width: 21px;
+  height: 21px;
+  margin: 22px 0 0 7px;
+  border-radius: 22px;
+
+  background: rgba(12,51,87,1);
+  background: -moz-linear-gradient(top, rgba(12,51,87,1) 0%, rgba(31,103,134,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(12,51,87,1)), color-stop(100%, rgba(31,103,134,1)));
+  background: -webkit-linear-gradient(top, rgba(12,51,87,1) 0%, rgba(31,103,134,1) 100%);
+  background: -o-linear-gradient(top, rgba(12,51,87,1) 0%, rgba(31,103,134,1) 100%);
+  background: -ms-linear-gradient(top, rgba(12,51,87,1) 0%, rgba(31,103,134,1) 100%);
+  background: linear-gradient(to bottom, rgba(12,51,87,1) 0%, rgba(31,103,134,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c3357', endColorstr='#1f6786', GradientType=0 );
+}
+
+.phone-image img {
+  margin: 2px 2px;
+}
+
+.phones p {
+  display: block;
+  float: left;
+  margin: 23px 0 0 3px;
+  color: #5e696d;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear-fix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+
+
+/*header {
   width: 922px;
   height: 328px;
   margin: 9px 0 0 44px;
@@ -78,4 +117,4 @@ nav {
   text-decoration: none;
   font-size: 13.64px;
   letter-spacing: .8px;
-}
+}*/

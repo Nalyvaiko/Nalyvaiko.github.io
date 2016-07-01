@@ -160,6 +160,7 @@ body {
 .main-menu {
   height: 34px;
   width: 100%;
+  margin: 2px 0 0 0;
   border: 1px solid #2c345a;
   border-radius: 5px;
 
@@ -178,7 +179,7 @@ body {
 }
 
 .main-menu ul {
-  margin: 2px 0 0 72px;
+  margin: 4px 0 0 72px;
 }
 
 .main-menu ul li {
@@ -277,7 +278,7 @@ body {
 /*  SEARCH  */
 .search {
   width: 100%;
-  margin: 8px 0 0 4px;
+  margin: 10px 0 0 4px;
 }
 
 .search-cars {
@@ -294,24 +295,132 @@ body {
   height: 20px;
 }
 
-.search-cars h1 {
+.search-cars-wheels {
   float: left;
-  font-size: 12px;
-  font-family: Arial;
-  color: rgb(21, 68, 103);
-  line-height: 2.333;
-  text-align: center;
-}
-
-.search-cars span {
-  float: left;
+  display: block;
+  margin: 2px 0 0px 20px;
+  color: #154467;
+  font-family: 'Arial Black', Arial, Helvetica, sans-serif;
   font-size: 10px;
-  font-family: Arial;
-  color: rgb(21, 68, 104);
-  line-height: 2.8;
-  text-align: left;
 }
 
-.search-cars span.search-cars-tires {
+.search-cars h1 {
+  display: block;
+  float: left;
+  margin: -3px 0 0px 68px;
+  color: #154467;
+  font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+  font-size: 79%;
+}
+
+.search-cars-tires {
   float: right;
+  display: block;
+  margin: 0 21px 0px 0;
+  color: #154467;
+  font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+/*      CASR FILTER     */
+.cars-filter {
+  float: left;
+  margin: 0 11px 0 18px;
+}
+
+.cars-filter-headlines {
+  float: left;
+  width: 72px;
+  margin-right: 1px;
+}
+
+.cars-filter-headlines p {
+  width: 75px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65%;
+  line-height: 8px;
+  margin-left: -1px;
+}
+
+.cars-filter-headlines span {
+  color: #77858b;
+  font-size: 91%;
+  line-height: 8px;
+  margin-left: 1px;
+}
+
+.mt4 {
+  margin-top: 4px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mt7 {
+  margin-top: 7px;
+}
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.mt6 {
+  margin-top: 6px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.cars-filter-params {
+  width: 101px;
+  margin: 0 -1px 0 3px;
+  float: left;
+}
+
+.cars-param {
+  width: 101px;
+  height: 16px;
+  float: right;
+  overflow: hidden;
+  border-top: 1px solid #b0b0b0;
+  border-left: 1px solid #b0b0b0;
+  background: url("../img/selectbg.png") no-repeat;
+  background-position-x: 84px;
+}
+
+.cars-param select {
+  width: 102px;
+  margin-left: -1px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+}
+
+.f4 {
+  width: 58px;
+  height: 16px;
+  margin-left: -2px;
+  float: left;
+  overflow: hidden;
+  border-top: 1px solid #b0b0b0;
+  border-left: 1px solid #b0b0b0;
+  background: url("../img/selectbg.png") no-repeat;
+  background-position-x: 41px;
+}
+
+.f4 select {
+  width: 59px;
+  margin-left: -1px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
 }

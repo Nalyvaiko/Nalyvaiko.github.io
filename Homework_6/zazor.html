@@ -53,7 +53,7 @@
 
       <!--  MENU  -->
       <nav>
-        <div class="main-menu">
+        <div class="main-menu clearfix">
           <ul>
             <li><a href="#">О КОМПАНИ</a></li>
             <li><a href="#">ОПЛАТА</a></li>
@@ -66,7 +66,7 @@
             <p class="summ">
               <span>на сумму: </span> 0,00 грн.
             </p>
-            <p class="goods">
+            <p class="goods-menu">
               <span>товаров: </span> 0
             </p>
             <img src="img/koshyk.png" alt="koshyk" />
@@ -75,7 +75,7 @@
       </nav>
 
       <!-- SEARCH  -->
-      <div class="search">
+      <div class="search clearfix">
         <section class="search-cars">
           <header>
             <span class="search-cars-wheels">
@@ -320,14 +320,218 @@
             <a href="#">поиск...</a>
           </div>
         </section>
-
       </div>
 
+      <!--  MAIN CONTENT  -->
+      <main role="main">
+        <div class="wrapper clearfix">
+          <section class="catalogue wrapper__column">
+            <header>
+              <div class="wrapper__column__header__logo catalogue-logo">
+                <img src="img/cat_icon.png" alt="">
+              </div>
+              <h2>КАТАЛОГ ПРОДУКЦИИ:</h2>
+            </header>
+            <section class="catalogue__section catalogue--tires">
+              <header class="catalogue__section__header">
+                <div class="catalogue__section__header__logo--bg"></div>
+                <div class="catalogue__section__header__logo--front"></div>
+                <p>ШИНЫ</p>
+              </header>
+              <ul>
+                <li><a href="#">Наименование 1</a></li>
+                <li><a href="#">Наименование 2</a></li>
+                <li><a href="#">Наименование 3</a></li>
+                <li><a href="#">Наименование 4</a></li>
+              </ul>
+            </section>
+            <section class="catalogue__section catalogue--wheels">
+              <header class="catalogue__section__header">
+                <div class="catalogue__section__header__logo--bg"></div>
+                <div class="catalogue__section__header__logo--front"></div>
+                <p>ДИСКИ</p>
+              </header>
+              <ul>
+                <li><a href="#">Наименование 1</a></li>
+                <li><a href="#">Наименование 2</a></li>
+                <li><a href="#">Наименование 3</a></li>
+                <li><a href="#">Наименование 4</a></li>
+              </ul>
+            </section>
+            <section class="catalogue__section catalogue--screw">
+              <header class="catalogue__section__header">
+                <div class="catalogue__section__header__logo--bg"></div>
+                <div class="catalogue__section__header__logo--front"></div>
+                <p>БОЛТЫ</p>
+              </header>
+              <ul>
+                <li><a href="#">Наименование 1</a></li>
+                <li><a href="#">Наименование 2</a></li>
+                <li><a href="#">Наименование 3</a></li>
+                <li><a href="#">Наименование 4</a></li>
+              </ul>
+            </section>
+          </section>
+          </section>
+            <section class="brands-filter wrapper__column">
+              <header>
+                <div class="wrapper__column__header__logo brands-logo">
+                  <img src="img/cat_icon.png" alt="">
+                </div>
+                <h2>БРЕНДЫ:</h2>
+              </header>
+              <section class="brands-filter__section brands-filter--tires">
+                <header class="brands-filter__section__header">
+                  <div class="brands-filter__section__header__logo--bg"></div>
+                  <div class="brands-filter__section__header__logo--front"></div>
+                  <p>ШИНЫ</p>
+                </header>
+                <section class="brands-filter__section__checkbox">
+                  <input type="checkbox" name="" id="tires1"><label for="tires1">Бренд 1</label>
+                  <input type="checkbox" name="" id="tires2"><label for="tires2">Бренд 2</label>
+                  <input type="checkbox" name="" id="tires3"><label for="tires3">Бренд 3</label>
+                </section>
+              </section>
+              <section class="brands-filter__section brands-filter--wheels">
+                <header class="brands-filter__section__header">
+                  <div class="brands-filter__section__header__logo--bg"></div>
+                  <div class="brands-filter__section__header__logo--front"></div>
+                  <p>ДИСКИ</p>
+                </header>
+                <section class="brands-filter__section__checkbox brands-filter--wheels">
+                  <input type="checkbox" name="" id="wheels1"><label for="wheels1">Бренд 1</label>
+                  <input type="checkbox" name="" id="wheels2"><label for="wheels2">Бренд 2</label>
+                  <input type="checkbox" name="" id="wheels3"><label for="wheels3">Бренд 3</label>
+                </section>
+                <a href="#" class="brands-filter__apply">ВЫБРАТЬ</a>
+              </section>
+            </section>
+
+            <article class="goods">
+              <div class="goods__good">
+                <div class="goods__good__title goodyear">
+                  <p>Goodyear<span>Ultra Grip Extreme</span></p>
+                </div>
+                <figure class="goods__good__image">
+                  <img src="img/goodyear.jpg" alt="" class="goodyear--image mt5">
+                  <figcaption class="goodyear">
+                    90.00 <span>грн.</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="goods__good">
+                <div class="goods__good__title nokian">
+                  <p>Nokian<span>Hakkapeliitta R</span></p>
+                </div>
+                <figure class="goods__good__image">
+                  <img src="img/nokian.jpg" alt="" class="nokian--image mt4">
+                  <figcaption class="nokian">
+                    115.00 <span>грн.</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="goods__good">
+                <div class="goods__good__title hankook">
+                  <p>Hankook<span>K 708 155/65 R14</span></p>
+                </div>
+                <figure class="goods__good__image">
+                  <img src="img/hankook.jpg" alt="" class="hankook--image mt4">
+                  <figcaption class="hankook">
+                    393.00 <span>грн.</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="goods__good">
+                <div class="goods__good__title goodyear">
+                  <p>Goodyear<span>Ultra Grip Extreme</span></p>
+                </div>
+                <figure class="goods__good__image">
+                  <img src="img/goodyear.jpg" alt="" class="goodyear--image mt6">
+                  <figcaption class="goodyear">
+                    90.00 <span>грн.</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="goods__good">
+                <div class="goods__good__title nokian">
+                  <p>Nokian<span>Hakkapeliitta R</span></p>
+                </div>
+                <figure class="goods__good__image">
+                  <img src="img/nokian.jpg" alt="" class="nokian--image mt3">
+                  <figcaption class="nokian">
+                    115.00 <span>грн.</span>
+                  </figcaption>
+                </figure>
+              </div>
+                <div class="goods__good">
+                  <div class="goods__good__title hankook">
+                    <p>Hankook<span>K 708 155/65 R14</span></p>
+                  </div>
+                  <figure class="goods__good__image">
+                    <img src="img/hankook.jpg" alt="" class="hankook--image mt4">
+                    <figcaption class="hankook">
+                      393.00 <span>грн.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="goods__good">
+                  <div class="goods__good__title goodyear">
+                    <p>Goodyear<span>Ultra Grip Extreme</span></p>
+                  </div>
+                  <figure class="goods__good__image mt4">
+                    <img src="img/goodyear.jpg" alt="" class="goodyear--image mt5">
+                    <figcaption class="goodyear">
+                      90.00 <span>грн.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="goods__good">
+                  <div class="goods__good__title nokian">
+                    <p>Nokian<span>Hakkapeliitta R</span></p>
+                  </div>
+                  <figure class="goods__good__image mt4">
+                    <img src="img/nokian.jpg" alt="" class="nokian--image mt4">
+                    <figcaption class="nokian">
+                      115.00 <span>грн.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="goods__good">
+                  <div class="goods__good__title hankook">
+                    <p>Hankook<span>K 708 155/65 R14</span></p>
+                  </div>
+                  <figure class="goods__good__image mt4">
+                    <img src="img/hankook.jpg" alt="" class="hankook--image mt4">
+                    <figcaption class="hankook">
+                      393.00 <span>грн.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+            </div>
+          <footer class="brands clearfix">
+            <img src="img/toyotires.png" alt="" class="brand--toyotires">
+            <img src="img/bridgestone.png" alt="" class="brand--bridgestone">
+            <img src="img/continental.png" alt="" class="brand--continental">
+            <img src="img/goodyear.png" alt="" class="brand--goodyear">
+            <img src="img/avon.png" alt="" class="brand--avon">
+            <img src="img/tirefactory.png" alt="" class="brand--tirefactory">
+            <img src="img/tirelli.png" alt="" class="brand--tirelli">
+            <img src="img/dunlop.png" alt="" class="brand--dunlop">
+          </footer>
+        </main>
 
       <!--  FOOTER -->
-      <footer></footer>
-
+      <footer class="main-footer">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><span>|</span><a href="#">Доставка</a></li>
+          <li><span>|</span><a href="#">Статьи</a></li>
+          <li><span>|</span><a href="#">Контакты</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <a href="#">Создание сайта &copy; Global Vision</a>
+      </footer>
     </div>
-
   </body>
 </html>

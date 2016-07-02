@@ -240,7 +240,7 @@ body {
   cursor: pointer;
 }
 
-.koshyk .goods {
+.koshyk .goods-menu {
   display: block;
   float: right;
   color: #0d5a8f;
@@ -266,7 +266,7 @@ body {
   font-size: 11px;
 }
 
-.koshyk .goods>span {
+.koshyk .goods-menu>span {
   margin: 1px 4px 0 0;
 }
 
@@ -847,4 +847,617 @@ select:focus {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-style: italic;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+/*  MAIN CONTENT  */
+
+.wrapper__column header {
+  width: 180px;
+  height: 24px;
+  color: #fff;
+  border: solid 1px #79878d;
+  border-radius: 14px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(150, 150, 150, 0.5);
+  -moz-box-shadow: 1px 1px 1px 1px rgba(150, 150, 150, 0.5);
+  box-shadow: 1px 1px 1px 1px rgba(150, 150, 150, 0.5);
+}
+
+.wrapper__column__header__logo {
+  float: left;
+  background: #114165;
+  background: -webkit-linear-gradient(rgba(32, 105, 136, 1) 0%, rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1) 100%);
+  background: -o-linear-gradient(rgba(32, 105, 136, 1) 0%, rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1) 100%);
+  background: linear-gradient(rgba(32, 105, 136, 1) 0%, rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1) 100%);
+}
+
+.wrapper__column h2 {
+  color: #114165;
+  font-family: 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.catalogue {
+  width: 185px;
+  float: left;
+}
+
+.catalogue header {
+  margin: 4px 0 0 -1px;
+}
+
+.catalogue-logo {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 2px 4px 0 3px;
+}
+
+.catalogue-logo img {
+  margin: 3px 0 0 4px;
+}
+
+.catalogue header h2 {
+  margin: 3px 0 0 0;
+  font-size: 77%;
+}
+
+.catalogue__section {
+  margin: 0 0 0 0;
+}
+
+.catalogue__section header {
+  position: relative;
+  width: 148px;
+  height: 26px;
+  margin: 14px 0 0 1px;
+  color: #fff;
+  border: solid 1px #79878d;
+  border-radius: 14px;
+}
+
+.catalogue__section__header__logo--bg {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  margin: 2px 0 0 4px;
+  background: #114165;
+  border-radius: 22px;
+  z-index: 1;
+}
+
+.catalogue__section__header__logo--front {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: 7px 0 0 9px;
+  background: #fff;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.catalogue__section__header p {
+  margin: 4px 0 0 28px;
+  color: #114165;
+  font-family: 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+
+.catalogue__section ul {
+  margin: 0 0 0 51px;
+}
+
+.catalogue__section li {
+  list-style-image: url("../img/li.png");
+}
+
+.catalogue__section li:nth-child(1) {
+  margin: 1px 0 0 0;
+}
+
+.catalogue__section li:nth-child(2) {
+  margin: 5px 0 0 0;
+}
+
+.catalogue__section li:nth-child(3) {
+  margin: 4px 0 0 0;
+}
+
+.catalogue__section li:nth-child(4) {
+  margin: 5px 0 0 0;
+}
+
+.catalogue__section a {
+  margin-left: -5px;
+  font-family: 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 80%;
+  color: #465961;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.catalogue__section .selected {
+  list-style-image: url("../img/liselect.png")
+}
+
+.catalogue__section .selected a {
+  border-bottom: 1px solid #0c3256;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 87%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.catalogue__section li:hover {
+  list-style-image: url("../img/liselect.png")
+}
+
+.catalogue__section a:hover {
+  border-bottom: 1px solid #0c3256;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 87%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.catalogue__section.catalogue--tires {
+  margin: 0 0 0 0;
+}
+
+.catalogue__section.catalogue--wheels {
+  margin: 0 0 0 0;
+}
+
+.catalogue__section.catalogue--wheels header {
+  margin: 1px 0 0 1px;
+}
+
+.catalogue--wheels .catalogue__section__header__logo--bg {
+  margin: 2px 0 0 3px;
+}
+
+.catalogue--wheels .catalogue__section__header__logo--front {
+  margin: 7px 0 0 8px;
+}
+
+.catalogue--wheels .catalogue__section__header__logo--front+p {
+  margin: 3px 0 0 28px;
+}
+
+.catalogue__section.catalogue--screw {
+  margin: 0 0 0 0;
+}
+
+.catalogue__section.catalogue--screw header {
+  margin: 0 0 0 1px;
+}
+
+.catalogue--screw .catalogue__section__header__logo--bg {
+  margin: 2px 0 0 3px;
+}
+
+.catalogue--screw .catalogue__section__header__logo--front {
+  margin: 7px 0 0 8px;
+}
+
+.catalogue--screw .catalogue__section__header__logo--front+p {
+  margin: 3px 0 0 28px;
+}
+
+.goods {
+  width: 526px;
+  height: 628px;
+  margin: 14px auto 0;
+  background: rgba(35, 75, 93, 1);
+  background: -webkit-linear-gradient(rgba(201, 207, 209, 0.49) 0%, rgba(35, 75, 93, 0.49) 100%);
+  background: -o-linear-gradient(rgba(201, 207, 209, 0.49) 0%, rgba(35, 75, 93, 0.49) 100%);
+  background: linear-gradient(rgba(201, 207, 209, 0.49) 0%, rgba(35, 75, 93, 0.49) 100%);
+  border-radius: 3px;
+}
+
+.goods__good {
+  float: left;
+  margin: 8px 8px 29px 22px;
+  cursor: pointer;
+}
+
+.goods__good:hover figure {
+  border: 1px solid rgba(35, 75, 93, 1);
+}
+
+.goods__good__title>p {
+  display: block;
+  font-family: 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  line-height: 10px;
+}
+
+.good__good__title>p>span {
+  display: block;
+  font-family: 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  line-height: 10px;
+}
+
+.goods__good__title>p {
+  color: #206988;
+  font-size: 97%;
+}
+
+.goods__good__title>p>span {
+  color: #1f2528;
+  font-size: 82%;
+}
+
+.goodyear>p {
+  margin: 11px 0 2px -38px;
+}
+
+.goodyear>p>span {
+  display: block;
+  margin: 3px 0 0 4px;
+}
+
+.nokian>p {
+  margin: 11px 0 2px -31px;
+}
+
+.nokian>p>span {
+  display: block;
+  margin: 3px 0 0 0;
+}
+
+.hankook>p {
+  margin: 11px 0 2px -30px;
+}
+
+.hankook>p>span {
+  display: block;
+  margin: 3px 0 0 -4px;
+}
+
+.goods__good__image {
+  width: 136px;
+  height: 127px;
+  background: #fff;
+  border: 1px solid #a4aeb1;
+  border-radius: 10px;
+}
+
+.goods__good__image img {
+  display: block;
+}
+
+.goodyear--image {
+  margin-left: 29px;
+}
+
+.nokian--image {
+  margin-left: 32px;
+}
+
+.hankook--image {
+  margin-left: 27px;
+}
+
+.goods__good__image figcaption {
+  color: #114165;
+  font-family: Arial Bold, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 100%;
+}
+
+.goods__good__image figcaption>span {
+  display: inline;
+  font-size: 79%;
+}
+
+.goodyear {
+  margin: 8px 0px 0 37px;
+}
+
+.goodyear>span {
+  margin: 0 0 0 0;
+}
+
+.nokian {
+  margin: 10px 0 0 34px;
+}
+
+.nokian>span {
+  margin: 0 0 0 1px;
+}
+
+.hankook {
+  margin: 9px 0 0 34px;
+}
+
+.hankook>span {
+  margin: 0 0 0 1px;
+}
+
+.brands-filter {
+  width: 185px;
+  float: right;
+}
+
+.brands-filter header {
+  margin: 2px 0 0 2px;
+}
+
+.brands-logo {
+  width: 21px;
+  height: 21px;
+  border-radius: 20px;
+  margin: 1px 5px 0 4px;
+}
+
+.brands-logo img {
+  margin: 4px 0 0 4px;
+}
+
+.brands-filter header h2 {
+  margin: 2px 0 0 0;
+  font-size: 85%;
+}
+
+.brands-filter__section {
+  margin: 0 0 0 0;
+}
+
+.brands-filter__section header {
+  position: relative;
+  width: 134px;
+  height: 26px;
+  margin: 15px 0 0 17px;
+  color: #fff;
+  border: solid 1px #79878d;
+  border-radius: 14px;
+}
+
+.brands-filter__section__header__logo--bg {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  margin: 2px 0 0 4px;
+  background: #114165;
+  border-radius: 22px;
+  z-index: 1;
+}
+
+.brands-filter__section__header__logo--front {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: 7px 0 0 9px;
+  background: #fff;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.brands-filter__section__header p {
+  margin: 3px 0 0 29px;
+  color: #114165;
+  font-family: 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+.brands-filter--wheels {
+  margin: -4px 0 0 -1px;
+}
+
+.brands-filter--wheels header {
+  width: 135px;
+  margin-bottom: 7px;
+}
+
+.brands-filter--wheels .brands-filter__section__header__logo--bg {
+  margin: 2px 0 0 2px;
+}
+
+.brands-filter--wheels .brands-filter__section__header__logo--front {
+  margin: 7px 0 0 7px;
+}
+
+.brands-filter--wheels .brands-filter__section__header__logo--front+p {
+  margin: 3px 0 0 30px;
+}
+
+.brands-filter__section__checkbox {
+  margin: 0 0 0 29px;
+}
+
+.brands-filter__section input {
+  display: block;
+}
+
+.brands-filter__section input:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.brands-filter__section input:not(checked) + label {
+  position: relative;
+  /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 23px;
+  /* оставляем слева от label место под псевдочекбокс */
+}
+
+.brands-filter__section input:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  margin: 1px 0 0 0;
+  border-radius: 2px;
+  border-top: 1px solid #1c4360;
+  border-left: 1px solid #5e7485;
+  border-right: 1px solid #254c6a;
+  border-bottom: 1px solid rgba(132, 155, 171, 0.5);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+  display: block;
+  color: #465961;
+  font-family: 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 81%;
+}
+
+.brands-filter__section input:checked + label:before {
+  background: #254c6a;
+}
+
+.brands-filter__section label {
+  display: block;
+  margin-left: -1px;
+  margin-top: 5px;
+  color: #465961;
+  font-family: 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 81%;
+}
+
+.brands-filter__section__checkbox.brands-filter--wheels input:not(checked) + label:before {
+  top: 4px;
+  left: 1px;
+}
+
+.brands-filter__apply {
+  display: block;
+  width: 80px;
+  margin: 17px 0 0 27px;
+  color: #e5e9ea;
+  background: #114165;
+  background: -webkit-linear-gradient(rgba(32, 105, 136, 1) 0%, rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1) 100%);
+  background: -o-linear-gradient(rgba(32, 105, 136, 1) 0%, rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1) 100%);
+  background: linear-gradient(rgba(32, 105, 136, 1) 0%, rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1) 100%);
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(188, 188, 188, 0.7);
+  -moz-box-shadow: 0px 1px 2px 1px rgba(188, 188, 188, 0.7);
+  box-shadow: 0px 1px 2px 1px rgba(188, 188, 188, 0.7);
+  border: 1px solid #a7abae;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 72%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 25px;
+}
+
+.brands {
+  margin: 42px 0 25px 117px;
+}
+
+.brands img {
+  display: block;
+  float: left;
+}
+
+.brand--toyotires {
+  margin: 0 0 0 0;
+}
+
+.brand--bridgestone {
+  margin: 0 0 0 12px;
+}
+
+.brand--continental {
+  margin: 0 0 0 13px;
+}
+
+.brand--goodyear {
+  margin: -1px 0 0 15px;
+}
+
+.brand--avon {
+  margin: 1px 0 0 12px;
+}
+
+.brand--tirefactory {
+  margin: -4px 0 0 13px;
+}
+
+.brand--tirelli {
+  margin: 1px 0 0 13px;
+}
+
+.brand--dunlop {
+  margin: 1px 0 0 15px;
+}
+
+.main-footer {
+  height: 99px;
+  background: #213a4d;
+  border: 1px solid #242a3c;
+}
+
+.main-footer ul {
+  margin: 7px 0 0 308px;
+}
+
+.main-footer li:nth-child(1) span {
+  margin: 0 11px 0 0;
+}
+
+.main-footer li:nth-child(2) span {
+  margin: 0 11px 0 0;
+}
+
+.main-footer li:nth-child(3) span {
+  margin: 0 11px 0 0;
+}
+
+.main-footer li:nth-child(4) span {
+  margin: 0 15px 0 0;
+}
+
+.main-footer li {
+  list-style: none;
+  display: block;
+  float: left;
+  padding: 0 11px 0 0;
+}
+
+.main-footer a {
+  color: #bec6c9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 78%;
+  text-decoration: none;
+}
+
+.main-footer a:hover {
+  color: #52abcb;
+}
+
+.main-footer span {
+  display: inline;
+  color: #bec6c9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 78%;
+  text-decoration: none;
+}
+
+.copyright {
+  clear: both;
+  width: 153px;
+  margin: 0 auto;
+}
+
+.main-footer>a {
+  display: block;
+  margin: 13px 0 0 375px;
+  color: #7f4740;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65%;
+  text-decoration: none;
+}
+
+.main-footer>a:hover {
+  color: #7f4740;
 }

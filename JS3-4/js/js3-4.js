@@ -9,11 +9,11 @@ var genPage = {
     pageAnswers: [["Вариант ответа №1", "Вариант ответа №2", "Вариант ответа №3"], ["Вариант ответа №1", "Вариант ответа №2", "Вариант ответа №3"], ["Вариант ответа №1", "Вариант ответа №2", "Вариант ответа №3"]]
   },
 
-  elementTag: ["h1", "ol", "li", "input", "ul"],
+  elementTag: ["h1", "ol", "li", "input", "ul", "div"],
 
-  // Генерация заголовка
   generate: function() {
     if (this.flag) {
+      // Генерация заголовка
       var titleText = this.pageConst.pageTitle;
       var titleTag = this.elementTag[0];
 
@@ -27,6 +27,7 @@ var genPage = {
       var li = this.elementTag[2];
       var input = this.elementTag[3];
       var ul = this.elementTag[4];
+      var div = this.elementTag[5];
 
       var questionArr = this.pageConst.pageQuestion;
       var answerArr = this.pageConst.pageAnswers;
@@ -61,21 +62,22 @@ var genPage = {
 
 
       // Генерация кнопки
-      var input = this.elementTag[3];
       var button = document.createElement(input);
+      var btnWrap = document.createElement(div);
+
+      btnWrap.style.textAlign = "center";
+
       button.setAttribute("type", "submit");
       button.setAttribute("value", "Проверить мои результаты");
-      button.style.margin = "10px 0 0 35%";
       button.style.border = "1px solid black";
-      button.style.height = "31px";
-      button.style.width = "201px";
-      this.pageBody.appendChild(button);
+      button.style.height = "30px";
+      button.style.width = "200px";
+      btnWrap.appendChild(button);
+      this.pageBody.appendChild(btnWrap);
 
       this.flag = false;
     } else {
-      console.log("--------------------------");
       console.log("--- Page already exist ---");
-      console.log("--------------------------");
     }
   }
 }

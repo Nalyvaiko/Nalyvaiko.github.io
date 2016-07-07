@@ -45,15 +45,25 @@ var genPage = {
 
             // Ответы на вопрос
             for (var j = 0; j < answerArr[i].length; j++) {
-              var elemLiChild = document.createElement(li);
+
+              // Списком
+              /*var elemLiChild = document.createElement(li);
               elemLiChild.style.listStyle = "none";
 
               var answer = document.createElement(input);
               answer.setAttribute("type", "checkbox");
-
               elemLiChild.appendChild(answer);
-              elemLiChild.appendChild(document.createTextNode(answerArr[i][j]));
-              elemUl.appendChild(elemLiChild);
+              elemLiChild.appendChild(document.createTextNode(answerArr[i][j]));*/
+
+              // Label + input
+              var label = document.createElement('label');
+              var answer = document.createElement(input);
+              label.style.display = "block";
+              answer.setAttribute("type", "checkbox");
+              label.appendChild(answer);
+              label.appendChild(document.createTextNode(answerArr[i][j]));
+
+              elemUl.appendChild(label);
             }
 
           list.appendChild(elemLi);

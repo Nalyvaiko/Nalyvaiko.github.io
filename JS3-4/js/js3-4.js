@@ -37,6 +37,7 @@ var genPage = {
 
             // Создать вопрос
             var elemLi = document.createElement(li);
+            elemLi.style.margin = "1px 0 10px 0";
             elemLi.innerHTML = questionArr[i];
 
             var elemUl = document.createElement(ul);
@@ -66,8 +67,10 @@ var genPage = {
               elemUl.appendChild(label);
             }
 
+
           list.appendChild(elemLi);
         }
+
       this.pageBody.appendChild(list);
 
 

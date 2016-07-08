@@ -94,3 +94,5 @@ var genPage = {
     }
   }
 }
+
+genPage.generate();

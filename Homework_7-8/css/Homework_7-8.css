@@ -165,3 +165,102 @@ body {
   border: 3px solid rgba(0, 0, 0, .5);
   background: linear-gradient(#d4d4d4 0%, #fff 100%);
 }
+
+
+/*    BLURBS:   ;*/
+
+.blurbs {
+  height: 340px;
+  margin: 59px 0 0;
+  border-top: 1px solid #33253a;
+  background: #322539;
+  background: linear-gradient(#745083 0%, #322539 100%);
+}
+
+.blurbs__wrapper {
+  margin: 79px auto 0;
+}
+
+.blurb {
+  float: left;
+  margin: 2px 0 0;
+}
+
+.blurb__logo {
+  float: left;
+  width: 30px;
+  height: 28px;
+  margin: 10px 23px 0 8px;
+  background: url('../img/tools.png');
+}
+
+.blurb__info {
+  float: left;
+  width: 226px;
+  color: #fff;
+}
+
+.blurb__header {
+  margin: 0 0 0 2px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  text-shadow: 0.5px 0.9px 0 #0f1518;
+  font-family: LeagueGothic;
+  text-transform: uppercase;
+}
+
+.blurb__description {
+  margin: 9px -1px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-shadow: 0.5px 0.9px 0 #0f1518;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.blurb__more {
+  float: right;
+  margin: 17px 10px 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-shadow: 0.5px 0.9px 0 #0f1518;
+  color: #fff;
+  font-family: LeagueGothic, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.blurb__more:hover {
+  text-shadow: 0 1px 8px rgba(255, 255, 255, .8);
+}
+
+.blurb--chat .blurb__logo {
+  margin: 6px 24px 0 59px;
+  background-position: -28px 0;
+}
+
+.blurb--media .blurb__logo {
+  margin: 5px 19px 0 59px;
+  background-position: -58px 0;
+}
+
+.line {
+  height: 1px;
+  border-bottom: 1px solid #0d151b;
+  background: #1d2f37;
+  z-index: 9;
+}
+
+.main {
+  height: 486px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #f9f9f9;
+}
+
+.main__wrapper {
+  margin: 0 auto;
+  padding: 99px 0 0;
+  background: url('../img/arrows.png') no-repeat center 0;
+}

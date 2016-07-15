@@ -8,10 +8,18 @@
   <body>
 
     <div class="wrapper">
-      <div class="main"></div>
 
+            <div class="main">
+              <form id="stopwatch" action="#">
+                <input id="startstopbutton" type="button" value="Start">
+                <input id="splitbutton" type="button" onclick="dosplit()" value="Split">
+                <input id="disp" type="button" value="00:00:00.000">
+                <input id="resetbutton" type="button" value="Reset">
+              </form>
+            </div>
 
-      <div class="split"></div>
+            <div class="split"></div>
+
     </div>
 
     <script type="text/javascript" src="js/stopwatch.js"></script>

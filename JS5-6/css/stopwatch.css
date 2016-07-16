@@ -31,5 +31,7 @@ input[type="button"] {
 
 #split {
   text-align: center;
+  font-size: 56px;
+  padding: 1px 6px;
   color: rgb(102, 102, 102);
 }

@@ -276,7 +276,7 @@ body {
 }
 
 .comments__info {
-  width: 472px;
+  width: 427px;
   height: 272px;
   margin: -73px 0 0 34px;
   background: #fff;
@@ -334,7 +334,7 @@ body {
 }
 
 .updates {
-  margin: 32px 0 0 12px;
+  margin: 32px 0 0 60px;
   float: left;
 }
 
@@ -390,4 +390,140 @@ body {
   font-weight: 300;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+/*     LOGOS    */
+.logos {
+  height: 119px;
+  margin: 1px 0 0;
+  border-bottom: 1px solid #e6e6e6;
+  background: #f9f9f9;
+}
+
+.logos__image {
+  width: 69px;
+  height: 65px;
+  margin: 23px 0 0 92px;
+  float: left;
+  background: url('../img/brands.png') 0 0 no-repeat;
+}
+
+.logos--dg.logos__image {
+  width: 72px;
+  margin: 23px 0 0 65px;
+  background-position: -71px 0;
+}
+
+.logos--tr.logos__image {
+  width: 65px;
+  margin: 23px 0 0 64px;
+  background-position: -145px 0;
+}
+
+.logos--awsm.logos__image {
+  width: 50px;
+  margin: 23px 0 0 75px;
+  background-position: -212px 0;
+}
+
+.logos--rvca.logos__image {
+  width: 103px;
+  margin: 23px 0 0 68px;
+  background-position: -264px 0;
+}
+
+.logos--vz.logos__image {
+  width: 78px;
+  margin: 23px 0 0 66px;
+  background-position: -369px 0;
+}
+
+.footer-posts {
+  height: 396px;
+  background: #ececec;
+}
+
+.footer-post {
+  width: 282px;
+  height: 215px;
+  margin: 91px 1px 0 57px;
+  float: left;
+  overflow: hidden;
+}
+
+.footer-post--pigbuller.footer-post {
+  margin: 87px 0 0 -3px;
+}
+
+.footer-post--pigbuller .footer-post__header {
+  font-size: 48px;
+}
+
+.footer-post__header {
+  margin: 0 0 5px;
+  color: #454545;
+  font-family: LeagueGothic, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.footer-post--pigbuller .footer-post__span {
+  color: #b9b9b9;
+}
+
+.footer-post--pigbuller .footer-post__slogan {
+  display: block;
+  margin: 7px 0 9px 1px;
+  color: #c5c5c5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-post__text {
+  margin: 0;
+  color: #787878;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.footer__wrapper {
+  padding: 38px 0 0;
+  background: url('../img/fshadow.png') no-repeat center 0;
+}
+
+.footer {
+  height: 114px;
+  background: url('../img/footer960.jpg') repeat-x center 0;
+}
+
+.menu.menu--footer {
+  margin: 0 0 0 -8px;
+  float: left;
+}
+
+.menu--footer .menu__item {
+  margin: 0 34px 0 0;
+}
+
+.menu--footer .menu__link {
+  font-size: 20px;
+}
+
+.copy {
+  margin: 10px 0 0;
+  float: right;
+}
+
+.copy__info {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.copy__span {
+  font-weight: 900;
 }

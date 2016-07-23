@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#tabs {
+  margin: 30px;
+  width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+}
+
+.tabs-header {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs-header li {
+  float: left;
+  list-style: none;
+}
+
+.tabs-header li + li {
+  border-left: 1px solid #ccc;
+}
+
+.tabs-header li:last-child {
+  border-right: 1px solid #ccc;
+}
+
+.tabs-header li a {
+  display: block;
+  padding: 8px 16px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #999;
+  text-decoration: none;
+}
+
+.tabs-header li a.active, .tabs-header li a:hover {
+  color: #369;
+}
+
+.tabs-wrapper {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 21px;
+}

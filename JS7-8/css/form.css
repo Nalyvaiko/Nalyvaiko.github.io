@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: Arial;
+}
+
+form {
+  margin: 30px auto;
+  width: 600px;
+}
+
+div {
+  margin: 20px;
+}
+
+label {
+  display: inline-block; width: 5em;
+}
+
+.tooltip {
+	display:inline-block;
+	position:absolute;
+	border: 1px solid rgba(81, 203, 238, .8);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	border-radius: 5px;
+	margin: 0 0 0 10px;
+  padding: 5px;
+	color:#000;
+}
+
+#btnHelp {
+  margin: 20px;
+}

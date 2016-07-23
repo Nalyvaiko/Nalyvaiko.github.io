@@ -3,12 +3,13 @@ $(function() {
   $tooltipElement = $('<p class="tooltip"></p>');
 
   $('input').hover(function() {
-      var tooltipText = $(this).attr('label');
-      $tooltipElement
-          .text(tooltipText)
-          .insertAfter($(this))
-          .fadeIn('slow');
-
+      if ($('.tooltip').length == 0) {
+          var tooltipText = $(this).attr('label');
+          $tooltipElement
+            .text(tooltipText)
+            .insertAfter($(this))
+            .fadeIn('slow');
+        }
       },
       function() {
           $('.tooltip').remove();

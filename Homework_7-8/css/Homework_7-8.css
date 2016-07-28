@@ -816,7 +816,7 @@ body {
 @media (max-width: 767px) {
 
   body {
-    width: 480px;
+    overflow-x: hidden;
   }
 
   .container {
@@ -902,7 +902,7 @@ body {
 
   .slider {
     height: 246px;
-    width: 480px;
+    width: 100%;
     margin: 92px 0 0;
   }
 
@@ -1165,7 +1165,7 @@ body {
 @media (max-width: 479px) {
 
   body {
-    width: 320px;
+    width: 100%;
     overflow-x: hidden;
   }
 
@@ -1185,7 +1185,7 @@ body {
 
   .slider {
     background: rgba(0, 0, 0, 0);
-    width: 320px;
+    width: 100%;
   }
 
   .slider__iphone {
@@ -1224,7 +1224,7 @@ body {
   }
 
   .blurbs__wrapper {
-    width: 320px;
+    width: 100%;
     margin: 67px auto 0;
   }
 
@@ -1269,11 +1269,11 @@ body {
 
   .main {
     height: 786px;
-    width: 320px;
+    width: 100%;
   }
 
   .main__wrapper {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     padding: 56px 0 0;
   }
@@ -1311,7 +1311,7 @@ body {
 
   .updates {
     margin: 91px 0 0 0;
-    width: 320px;
+    width: 100%;
   }
 
   .updates__post {
@@ -1381,7 +1381,7 @@ body {
 
   .footer-posts {
     display: none;
-    width: 320px;
+    width: 100%;
   }
 
   .main-footer {
@@ -1389,7 +1389,7 @@ body {
   }
 
   .footer__wrapper {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
   }
 

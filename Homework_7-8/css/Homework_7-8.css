@@ -1166,6 +1166,7 @@ body {
 
   body {
     width: 320px;
+    overflow-x: hidden;
   }
 
   .container {

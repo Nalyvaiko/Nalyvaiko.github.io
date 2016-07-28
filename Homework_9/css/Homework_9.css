@@ -1167,6 +1167,10 @@ body {
 
 @media (max-width: 479px) {
 
+  body {
+    width: 320px;
+  }
+
   .container {
     width: 320px;
   }

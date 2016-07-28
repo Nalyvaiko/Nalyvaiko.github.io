@@ -1411,6 +1411,6 @@ body {
 .test {
   height: 100px;
   width: 470px;
-  margin-left: 10px;
+  margin-right: 10px;
   background: red;
 }

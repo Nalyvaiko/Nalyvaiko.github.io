@@ -1,6 +1,6 @@
 .jcusel-wrapper, .checkbox-wrapper {
   margin: 25px auto;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 /*  CHECKBOX  */
@@ -20,4 +20,37 @@
 }
 .niceCheckDisabled {
 	background-image: url(../img/checkbox-disabled.png);
+}
+
+/*  CHKBOX CSS  */
+.checkbox-css {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.label-checkbox-css {
+	cursor: pointer;
+}
+
+.label-checkbox-css:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox-2.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+
+.checkbox-css:checked + .label-checkbox-css:after {
+  background-position: 0 -17px;
+}
+
+.label-checkbox-css:hover:after {
+  background-position: 0 -34px;
+}
+
+.checkbox-css:checked + .label-checkbox-css:hover:after {
+  background-position: 0 -51px;
 }

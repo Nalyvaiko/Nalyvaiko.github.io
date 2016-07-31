@@ -2,15 +2,11 @@ $(function(){
       $('.dropdown').hover(
 
         function() {
-          $submenu = $(this).children('.sub-menu');
-          $submenu.slideDown(200);
-          $submenu.addClass("color", 1000);
+          $(this).children('.sub-menu').slideDown(200).addClass('color');
         },
 
         function() {
-          $submenu = $(this).children('.sub-menu');
-          $submenu.slideUp(200);
-          $submenu.removeClass("color", 1000);
+          $(this).children('.sub-menu').slideUp(200).removeClass('color');
         }
   )
 });

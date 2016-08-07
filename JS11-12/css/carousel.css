@@ -45,7 +45,7 @@ body {
 }
 
 .carousel-arrow-left:hover i, .carousel-arrow-right:hover i{
-  background-color: grey;
+  background-color: lightgrey;
   border-radius: 100%;
   cursor: pointer;
 }

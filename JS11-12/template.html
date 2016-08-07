@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <link rel="stylesheet" href="css/template.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+
+    <script type="text/template" id="test">
+      <div class="main">
+        <h1 class="name"><%= data.name %></h1>
+        <div class="photo"><img src="<%= data.photoSrc %>" alt="photo"></div>
+        <div class="p1"><%= data.position %></div>
+        <div class="p2"><%= data.reasonTitle %></div>
+        <ul>
+          <li><%= data.reason1 %></li>
+          <li><%= data.reason2 %></li>
+          <li><%= data.reason3 %></li>
+        </ul>
+        <div class="pblock">
+          <p><%= data.contactTitle %></p>
+          <p><%= data.mobilePhone %></p>
+        </div>
+        <div class="pblock">
+          <p><%= data.facebookTitle %></p>
+          <p><a href="<%= data.facebookRef %>" target="_blank"><%= data.facebookText %></a></p>
+        </div>
+        <div class="pblock-end">
+          <p><%= data.feedBackTitle %></p>
+          <p><%= data.feedBack %></p>
+        </div>
+      </div>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tmpl.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+
+  </body>
+</html>

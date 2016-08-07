@@ -1,0 +1,75 @@
+body {
+  background: grey;
+}
+
+.main{
+  width: 794px;
+  height: 1122px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  padding: 40px;
+  background: white;
+}
+
+.name{
+  text-align: center;
+}
+
+.photo{
+  max-width: 100%;
+  text-align: center;
+}
+
+.photo img{
+  border-radius: 10px;
+  width: 350px;
+}
+
+.pblock, .pblock-end{
+  font-size: 18pt;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 5%;
+}
+
+.p1, .p2{
+  font-size: 18pt;
+  margin-left: 5%;
+}
+
+.p1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid grey;
+}
+
+.p2{
+  padding-top: 30px;
+}
+
+.pblock p{
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.pblock-end p{
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+ul{
+  font-size: 18pt;
+  padding-bottom: 30px;
+  border-bottom: 1px solid grey;
+  margin-left: 5%;
+}
+
+li{
+  padding-top: 14px;
+}
+
+.pblock-end{
+  padding-top: 30px;
+  border-top: 1px solid grey;
+}

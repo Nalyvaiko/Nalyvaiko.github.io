@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+}
+
+li {
+  margin: 1px 0 10px;
+}
+
+ul {
+  padding: 0;
+}
+
+label {
+  display: block;
+}
+
+.btn-submit {
+  text-align: center;  
+}
+
+input[type="submit"] {
+  border: 1px solid black;
+  height: 30px;
+  width: 200px;
+}

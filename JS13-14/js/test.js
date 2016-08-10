@@ -31,7 +31,7 @@ $(function() {
     // Check answers
     function checkAnswers() {
       var messagePassed = 'Тест успешно пройден!'
-      var messageNotPassed = 'Не правильно отвеченные вопросы: ';
+      var messageNotPassed = 'Не правильно отвеченный вопрос(ы): ';
       var notPassed = false;
       var answerWrong = false;
 

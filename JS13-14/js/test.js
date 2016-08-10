@@ -28,11 +28,13 @@ $(function() {
 
     $('#submit').on('click', checkAnswers);
 
-    var messagePassed = 'Тест успешно пройден!'
-    var messageNotPassed = 'Не правильно отвеченные вопросы: ';
-    var notPassed = false;
     // Check answers
     function checkAnswers() {
+      var messagePassed = 'Тест успешно пройден!'
+      var messageNotPassed = 'Не правильно отвеченные вопросы: ';
+      var notPassed = false;
+      var answerWrong = false;
+
       var $res = $('li ul');
 
       $.each($res, function(i, question) {
@@ -40,23 +42,29 @@ $(function() {
         for ( var j = 0; j < $data.answers[i].length; j++ ) {
           if ($radioArray[j].checked !== $data.answers[i][j].proper) {
             notPassed = true;
+            answerWrong = true;
           }
         }
 
-        if (notPassed) {
+        if (answerWrong) {
           messageNotPassed += ((i + 1) + ' ');
         }
+        answerWrong = false;
       });
 
       $(this).addClass('pushed');
       if (notPassed) {
         showModal(messageNotPassed);
+        // Если не пройден тест - очистить радио
+        $.each( $("input[type=radio]"), function() {
+          this.checked = false;
+        });
       } else {
         showModal(messagePassed);
       }
     };
 
-    // Модальное окно
+    // ---------------------------------- Модальное окно -------------------------------------------------------------
     function showModal(message) {
       $('#overlay').fadeIn(400, function() { // пoсле выпoлнения предъидущей aнимaции
 				$('#modal_form')
@@ -65,23 +73,15 @@ $(function() {
 					.animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
 		  });
     }
-
-      /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
-    	$('#overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
-    		$('#modal_form')
-    			.animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
-    				function() { // пoсле aнимaции
-    					$(this).css('display', 'none'); // делaем ему display: none;
-    					$('#overlay').fadeOut(400); // скрывaем пoдлoжку
-    				}
-    			);
-
-        $('.pushed').removeClass('pushed');
-        if (notPassed) {
-          $.each( $("input[type=radio]"), function() {
-            this.checked = false;
-          });
-        }
-
-    	});
+    /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+    $('#overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+    	$('#modal_form')
+    		.animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+    			function() { // пoсле aнимaции
+    				$(this).css('display', 'none'); // делaем ему display: none;
+    				$('#overlay').fadeOut(400); // скрывaем пoдлoжку
+    			}
+    		);
+      $('.pushed').removeClass('pushed');
+    });
 });

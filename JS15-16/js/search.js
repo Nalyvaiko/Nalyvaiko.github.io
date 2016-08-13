@@ -1,47 +1,34 @@
+$(function() {
 
+    var $inputQuery = $('#text');
 
-(function() {
-  var cx = '006061209710297603962:gt2pwouess0';
-  var gcse = document.createElement('script');
-  gcse.type = 'text/javascript';
-  gcse.async = true;
-  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(gcse, s);
-})();
+    $inputQuery.keydown(function(e) {
+        if (e.keyCode == 13) search();
+    });
 
+    $('#submit').on('click', search);
 
-// 'https://www.googleapis.com/customsearch/v1?q=query&cx=006061209710297603962%3Agt2pwouess0&key={AIzaSyCthIt7Tu3LvJVZI6joT8cHKnHtSTCioFk}'
+    function search() {
+        var query = $inputQuery.val();
+        console.log(query);
+        var API_KEY = '3081108-3600af9249191bafd908e3d21';
+        var URL = "https://pixabay.com/api/?key="+ API_KEY +"&q="+encodeURIComponent(query);
 
+        $.getJSON(URL, function(data) {
+            if (parseInt(data.totalHits) > 0) {
+                var ul = document.createElement("ul")
+                $.each(data.hits, function(i, hit) {
+                    var li = document.createElement("li");
+                    li.innerHTML = '<a href="'+ hit.pageURL +'" target="_blank"><img src="'+ hit.webformatURL +'"></a>';
+                    ul.appendChild(li);
+                });
+                $('.search-result').html(ul);
+            }
+            else {
+                console.log('No hits');
+            }
+        });
 
-
-'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=AIzaSyCthIt7Tu3LvJVZI6joT8cHKnHtSTCioFk&rsz=large&q='+ 'test' + '&callback=GoogleCallback&context=?',
-
-function GoogleCallback() {
-  console.log('arguments', arguments);
-}
-
-$(function(){
-
-
-
-  $.ajax({
-    url: 'https://www.googleapis.com/customsearch/v1?q='+ 'test' + '&cx=006061209710297603962%3Agt2pwouess0&key={AIzaSyCthIt7Tu3LvJVZI6joT8cHKnHtSTCioFk}',
-    dataType: 'jsonp'
-  });
-
-
+    }
 
 });
-
-
- // $.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0?key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=PHP&callback=GoogleCallback&context=?",
- //  function(data){
- //    var ul = document.createElement("ul");
- //    $.each(data.results, function(i, val){
- //      var li = document.createElement("li");
- //      li.innerHTML = '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+"</a> - "+val.content;
- //      ul.appendChild(li);
- //    });
- //    $('body').html(ul);
- //  });

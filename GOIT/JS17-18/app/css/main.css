@@ -1,0 +1,9 @@
+body {
+  font-size: 30px; }
+
+body {
+  background-color: gray;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }

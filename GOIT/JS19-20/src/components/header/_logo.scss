@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+
+  a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  p {
+    @include font(Ubuntu, 30px, 500, 20px);
+    width: 162px;
+    height: 23px;
+    margin: 0 0 0 11px;
+    color: $logoColor;
+  }
+
+  span {
+    @include font(Ubuntu, 12px, 300, 20px);
+    display: block;
+    width: 162px;
+    height: 8px;
+    color: $spanColor;
+    letter-spacing: 3.48px;
+    text-transform: uppercase;
+    opacity: .65;
+  }
+}

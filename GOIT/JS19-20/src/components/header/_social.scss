@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  a {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px 0 14px;
+    background: url('../img/header/sprite.png');
+  }
+
+  a:hover {
+    background-position-y: -17px;
+  }
+
+  .fb {
+    width: 8px;
+    background-position-x: 0;
+  }
+
+  .twit {
+    background-position-x: -8px;
+  }
+
+  .rss {
+    background-position-x: -26px;
+  }
+
+  .in {
+    background-position-x: -42px;
+  }
+
+  .skype {
+    background-position-x: -58px;
+  }
+}

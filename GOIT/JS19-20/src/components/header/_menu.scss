@@ -1,0 +1,74 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  background: $backgoundColor;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    display: flex;
+    list-style: none;
+  }
+
+  a {
+    @include font('Ubuntu Condensed', 14px, 400, 56px);
+    padding: 0 39px;
+    border-right: 1px solid $linkBorderColor;
+    color: $linkColor;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: $linkHoverColor;
+  }
+
+  .selected {
+    background: $linkSelectedColor;
+  }
+
+  .search {
+    display: flex;
+    width: 241px;
+    margin: 8px;
+  }
+
+  .search-input {
+    @include font(Arial, 12px, 400, 20px);
+    width: 241px;
+    height: 40px;
+    padding: 14px;
+    border: 1px solid $inputBorderColor;
+    background: $inputBackgroundColor;
+    color: $inputColor;
+  }
+
+  input::-webkit-input-placeholder {
+    @include font(Arial, 12px, 400, 20px);
+    color: $inputColor;
+    opacity: .15;
+  }
+
+  input:-ms-input-placeholder {
+    @include font(Arial, 12px, 400, 20px);
+    color: $inputColor;
+    opacity: .15;
+  }
+
+  .search-btn {
+    width: 14px;
+    height: 14px;
+    margin: 14px 0 0 -27px;
+    border: 0;
+    background: url('../img/header/search.png');
+    cursor: pointer;
+  }
+
+  input:focus {
+    border: 0;
+    outline: 0;
+  }
+}

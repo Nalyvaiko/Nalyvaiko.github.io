@@ -1,4 +1,5 @@
-[
+
+var dataArr = [
   {
     "guid": "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
     "index": 0,
@@ -272,4 +273,4 @@
     "longitude": 37.385548,
     "_id": "56bdc3396fdbaec5ee4ca929"
   }
-]
+];

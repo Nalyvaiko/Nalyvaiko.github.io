@@ -27,4 +27,12 @@ $(function() {
       $('.jcarousel').jcarousel('scroll', '+=1');
   });
 
+  $('.services a').on('mouseover', function() {
+        $($(this).parent().parent()).addClass('hover');
+    });
+
+    $('.services a').on('mouseleave', function() {
+        $($(this).parent().parent()).removeClass('hover');
+    });
+
 });

@@ -1,0 +1,74 @@
+& {
+  height: 500px;
+  margin: 87px 0 0;
+  padding: 48px 0 0;
+  background-color: $backgroundColor;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 57px auto 0;
+  }
+
+  h1 {
+    @include font(Ubuntu, 24px, 500, 20px);
+    max-width: 1160px;
+    margin: 0 auto;
+    color: $headerColor;
+  }
+
+  figure {
+    position: relative;
+    width: 260px;
+    text-align: center;
+    overflow: hidden;
+
+    div {
+      height: 260px;
+      overflow: hidden;
+      background: url('../img/services/sprite.png') no-repeat;
+      cursor: pointer;
+
+      &:hover {
+        background-position-y: -263px;
+      }
+
+      &:hover+figcaption a {
+        color: $linkHoverColor;
+      }
+
+      &.service2 {
+        background-position-x: -263px;
+      }
+
+      &.service3 {
+        background-position-x: -529px;
+      }
+
+      &.service4 {
+        background-position-x: -795px;
+      }
+    }
+
+    &.hover>div {
+      background-position-y: -263px;
+    }
+
+    figcaption {
+      margin: 34px 0 0;
+      text-align: center;
+    }
+
+    a {
+      @include font(Ubuntu, 16px, 500, 20px);
+      color: $headerColor;
+      text-decoration: none;
+
+      &:hover {
+        color: $linkHoverColor;
+      }
+    }
+
+  }
+}

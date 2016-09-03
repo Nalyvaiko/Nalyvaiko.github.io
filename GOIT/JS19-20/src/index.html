@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/style.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel-core.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel-pagination.min.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
     <title>Build Home</title>
   </head>
   <body>
@@ -13,10 +17,7 @@
         <div class="logo">
           <a href="#">
             <img src="img/header/logo.jpg" alt="logo" />
-            <p>
-              Build Home
-              <span>Industrial Theme</span>
-            </p>
+            <p>Build Home <span>Industrial Theme</span></p>
           </a>
         </div>
         <nav class="social">
@@ -42,9 +43,46 @@
       </nav>
     </header>
 
-    <section class="slider">SLIDER</section>
+    <section class="slider">
+      <div class="jcarousel">
+        <ul>
+          <li><img src="img/slider/slider1.jpg" alt="img1" /></li>
+          <li><img src="img/slider/slider2.jpg" alt="img2" /></li>
+          <li><img src="img/slider/slider3.jpg" alt="img3" /></li>
+        </ul>
+      </div>
+      <p class="jcarousel-pagination"></p>
+    </section>
 
-    <section class="posts">POSTS</section>
+    <section class="posts">
+      <article class="post">
+        <h1>01</h1>
+        <div class="post-wrapper">
+          <div class="post-logo"></div>
+          <h2>Power Inside</h2>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+          <a href="#">Read More</a>
+        </div>
+      </article>
+      <article class="post">
+        <h1>02</h1>
+        <div class="post-wrapper">
+          <div class="post-logo params"></div>
+          <h2>New Technologies</h2>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+          <a href="#">Read More</a>
+        </div>
+      </article>
+      <article class="post">
+        <h1>03</h1>
+        <div class="post-wrapper">
+          <div class="post-logo truck"></div>
+          <h2>Fast Support</h2>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+          <a href="#">Read More</a>
+        </div>
+      </article>
+    </section>
 
     <section class="services">SERVICES</section>
 
@@ -55,6 +93,5 @@
     <section class="footer-menu">FOOTER-MENU</section>
 
     <footer class="footer">FOOTER</footer>
-
   </body>
 </html>

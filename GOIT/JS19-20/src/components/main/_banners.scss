@@ -1,0 +1,67 @@
+& {
+
+  .panel {
+    width: 559px;
+    margin: 0 0 5px;
+
+    .title {
+      display: flex;
+      height: 39px;
+      border: 1px solid $panelTitleBorderColor;
+      background: $panelTitleBackgroundColor;
+      cursor: pointer;
+
+      span {
+        @include font(Ubuntu, 16px, 300, 39px);
+        width: 37px;
+        border-right: 1px solid $panelTitleBorderColor;
+        text-align: center;
+
+        &::after {
+          content: '+';
+        }
+      }
+
+      h2 {
+        @include font(Ubuntu, 13px, 500, 39px);
+        padding: 0 0 0 12px;
+        border-left: 1px solid $panelTitleBorderColor;
+        color: $panelHeaderColor;
+        text-transform: uppercase;
+      }
+
+      & + p {
+        @include font(Arial, 13px, 400, 20px);
+        max-height: 0;
+        transition: all .3s;
+        color: $pColor;
+        overflow: hidden;
+      }
+
+      &.active {
+        border: 1px solid $panelActiveBorderColor;
+        background: $panelActiveBackgroundColor;
+
+        span {
+          border-right: 1px solid $panelActiveBorderColor;
+
+          &::after {
+            content: '-';
+          }
+        }
+
+        h2 {
+          border-left: 1px solid $panelActiveBorderColor;
+          color: $panelTitleBackgroundColor;
+          text-transform: uppercase;
+        }
+
+        & + p {
+          margin: 30px 0 39px 37px;
+          max-height: 100px;
+        }
+      }
+    }
+  }
+
+}

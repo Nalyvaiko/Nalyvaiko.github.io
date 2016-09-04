@@ -1,0 +1,46 @@
+& {
+
+  background: $backgroundColor;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1160px;
+    height: 375px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    @include font(Ubuntu, 16px, 500, 24px);
+    color: $groupHeaderColor;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin: 48px 0 0;
+
+    li {
+      list-style: none;
+
+      a {
+        @include font(Arial, 13px, 400, 36px);
+        display: block;
+        width: 260px;
+        border-bottom: 1px solid $linkBorderColor;
+        color: $linkColor;
+        text-decoration: none;
+        opacity: .3;
+
+        &:hover {
+          color: $linkHoverColor;
+          opacity: 1;
+        }
+      }
+
+      &:last-child a {
+        border-bottom: 1px solid $linkLastBorderColor;
+      }
+    }
+  }
+}

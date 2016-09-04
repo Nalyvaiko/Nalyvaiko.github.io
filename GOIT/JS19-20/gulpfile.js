@@ -21,6 +21,11 @@ gulp.task('sass', function () {
              .pipe(browserSync.reload({stream: true}));
 });
 
+gulp.task('json', function() {
+  return gulp.src('src/js/*.json')
+             .pipe(gulp.dest('dist/js'));
+});
+
 gulp.task('scripts', function() {
   return gulp.src('src/js/*.js')
              .pipe(concat('app.min.js'))

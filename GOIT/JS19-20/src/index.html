@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel-core.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel-pagination.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
     <script type="text/javascript" src="js/app.min.js"></script>
     <title>Build Home</title>
   </head>
@@ -106,12 +107,131 @@
       </div>
     </section>
 
-    <main class="main">MAIN</main>
+    <main class="main">
+      <div class="wrapper">
+        <div class="news">
+          <h1>latest news</h1>
+          <article>
+            <div class="date">
+              <div class="month"><span>JAN</span></div>
+              <div class="day"><span>23</span></div>
+            </div>
+            <div class="image"><img src="img/main/news1.jpg" alt=""></div>
+            <div class="info">
+              <h2>Advanced Machinery Helps Improve Quality</h2>
+              <p>by <span>cmsmasters</span> Comments (<a href="#">6</a>)</p>
+              <p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+            </div>
+          </article>
 
-    <section class="brands">BRANDS</section>
+          <article>
+            <div class="date">
+              <div class="month"><span>JAN</span></div>
+              <div class="day"><span>21</span></div>
+            </div>
+            <div class="image"><img src="img/main/news2.jpg" alt=""></div>
+            <div class="info">
+              <h2>Powerful Techniq    ues for Advanced Service</h2>
+              <p>by <span>cmsmasters</span> Comments (<a href="#">3</a>)</p>
+              <p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+            </div>
+          </article>
+        </div>
+        <div class="banners">
+          <h1>Banners Place</h1>
+          <div class="panel">
+            <div class="title">
+              <span></span>
+              <h2>Accordion Panel 1</h2>
+            </div>
+            <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus.
+              Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec   augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+          </div>
+          <div class="panel">
+            <div class="title">
+              <span></span>
+              <h2>Accordion Panel 2</h2>
+            </div>
+            <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus.
+              Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+          </div>
+          <div class="panel">
+            <div class="title active">
+              <span></span>
+              <h2>Accordion Panel 3</h2>
+            </div>
+            <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus.
+              Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+          </div>
+          <div class="panel">
+            <div class="title">
+              <span></span>
+              <h2>Accordion Panel 4</h2>
+            </div>
+            <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus.
+              Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <section class="footer-menu">FOOTER-MENU</section>
+    <section class="brands">
+      <img src="img/brands/brand1.png" alt="">
+      <img src="img/brands/brand2.png" alt="">
+      <img src="img/brands/brand3.png" alt="">
+      <img src="img/brands/brand4.png" alt="">
+      <img src="img/brands/brand5.png" alt="">
+      <img src="img/brands/brand6.png" alt="">
+    </section>
 
-    <footer class="footer">FOOTER</footer>
+    <section class="footer-menu">
+      <div class="wrapper">
+        <div class="menu">
+          <h2>Socials</h2>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Flickr</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Vimeo</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h2>Links</h2>
+          <ul>
+            <li><a href="#">How to Write a Blog</a></li>
+            <li><a href="#">Create a Blog in 4 Steps</a></li>
+            <li><a href="#">15 Tips to Increase Traffic</a></li>
+            <li><a href="#">20 Blog Post Ideas</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h2>Blogroll</h2>
+          <ul>
+            <li><a href="#">Blogs Blog</a></li>
+            <li><a href="#">Roll Up Roll Up</a></li>
+            <li><a href="#">Blog Free</a></li>
+            <li><a href="#">Wordpress Blog</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h2>About us</h2>
+          <ul>
+            <li><a href="#">Agriculture</a></li>
+            <li><a href="#">Harvest</a></li>
+            <li><a href="#">Company news</a></li>
+            <li><a href="#">Investor relations</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <a class="adress" href="#">BuildHomeLtd. Street Name 123  23 45 Cityname</a>
+        <a class="phone" href="#">+123 900 123 456</a>
+        <a class="mail" href="#">info@buildhome.web</a>
+        <a class="copy" href="#">&copy; 2014 Build Home</a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,83 @@
+& {
+  
+  article {
+    display: flex;
+    margin: 30px 0 0;
+
+    .date {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 12px 0 0;
+      z-index: 1;
+
+      div {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+
+        span {
+          @include font(Ubuntu, 15px, 500, 40px);
+        }
+      }
+
+      .month {
+        background-color: $mounthBackgruondColor;
+      }
+
+      .day {
+        background-color: $dayBackgroundColor;
+      }
+    }
+
+    .image {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 0 0 -23px;
+      text-align: center;
+      overflow: hidden;
+      z-index: 0;
+
+      img {
+        position: relative;
+        right: 0;
+        margin: 0 -125%;
+      }
+    }
+
+    .info {
+      max-width: 380px;
+      height: 150px;
+      margin: 0 0 0 34px;
+
+      h2 {
+        @include font(Ubuntu, 16px, 500, 20px);
+        margin: 0 0 5px;
+        color: $font-color;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &:hover {
+          color: $mounthBackgruondColor;
+        }
+      }
+
+      p {
+        @include font(Arial, 13px, 400, 18px);
+        margin: 0 0 20px;
+        color: $pColor;
+      }
+
+      span {
+        color: $spanColor;
+      }
+
+      a {
+        color: $spanColor;
+        text-decoration: none;
+      }
+    }
+
+  }
+}

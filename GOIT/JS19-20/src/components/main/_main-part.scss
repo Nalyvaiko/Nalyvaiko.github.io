@@ -1,0 +1,19 @@
+& {
+  height: 545px;
+  background-color: $backgroundColor;
+
+  h1 {
+    @include font(Ubuntu, 24px, 500, 20px);
+    margin: 0 0 47px;
+    color: $font-color;
+    text-transform: capitalize;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 0 0;
+  }
+}

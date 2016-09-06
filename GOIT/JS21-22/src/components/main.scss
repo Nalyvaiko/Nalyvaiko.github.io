@@ -1,0 +1,9 @@
+body {
+
+  background: skyblue;
+  font-family: monospace;
+  font-size: 18px;
+
+  @import "form/main";
+  @import "modal/main";
+}

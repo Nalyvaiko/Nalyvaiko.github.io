@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+
+    <script type="text/template" id="wrapper-template">
+      <div class="wrapper">
+        <ul class="item-list"></ul>
+        <div class="controlls">
+          <input type="text" class="item-value">
+          <button class="item-add">Add</button>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="list-template">
+      <% for(var i = 0; i < listArr.length; i++) {%>
+        <li><%= listArr[i] %><span data-value="<%= listArr[i] %>" class="item-delete"> x</span></li>
+      <% }%>
+    </script>
+
+  </body>
+</html>

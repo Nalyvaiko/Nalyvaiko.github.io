@@ -4,7 +4,7 @@ define(
   // dependencies
   ['Model', 'jquery', 'lodash'],
   // describe module
-  function (model, $, _) {
+  function (model, $) {
 
     return {
 

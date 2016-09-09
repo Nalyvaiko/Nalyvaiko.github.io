@@ -12,9 +12,7 @@ require(
   ],
 
   function (Model, View, Controller) {
-    var firstToDoList = {listArr: ['learn javascript', 'buy new robbe', 'make coffee']};
-
-    Model.addList(firstToDoList);
+    Model.loadList();
     View.init();
     Controller.addListeners(View);
   }

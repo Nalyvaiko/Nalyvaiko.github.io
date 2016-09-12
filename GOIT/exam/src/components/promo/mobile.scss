@@ -1,0 +1,71 @@
+& {
+  height: 540px;
+  background: $backgroundColor url('../img/promo/background.png') top center no-repeat;
+  background-size: cover;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $linkColor;
+  text-align: center;
+
+  .promo__navigation {
+    padding: px(40) 0;
+    display: flex;
+    justify-content: center;
+
+    div {
+      a {
+        margin: 0 px(10) 0 0;
+        padding: px(16) px(36);
+        border: 2px solid $linkBorderColor;
+        border-radius: px(36);
+        color: $linkColor;
+        font-size: px(28);
+        font-weight: 700;
+        line-height: px(72);
+        text-decoration: none;
+
+        &:hover {
+          border: 2px solid $linkColor;
+        }
+      }
+    }
+  }
+
+  h2 {
+    margin: px(190) 0 0;
+    font-size: px(40);
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    margin: px(76) auto 0;
+    width: px(572);
+    // font-size: 30px;
+    font-size: px(60);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin: px(38) px(96);
+    font-family: robotothin, Arial, sans-serif;
+    font-size: px(36);
+    font-weight: 300;
+  }
+
+  .promo__button {
+    margin: 0;
+    padding: 0 px(100);
+    border: 0;
+    outline: 0;
+    border-radius: px(40);
+    font-size: px(28);
+    line-height: px(80);
+    font-weight: 700;
+    color: $linkColor;
+    background-color: $buttonBackgroundColor;
+
+
+  }
+}

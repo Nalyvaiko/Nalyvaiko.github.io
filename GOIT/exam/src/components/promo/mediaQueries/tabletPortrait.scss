@@ -1,0 +1,31 @@
+@import '../mobile';
+
+& {
+	height: 700px;
+
+	nav {
+		justify-content: space-between;
+		padding: px(40) px(100);
+
+		h2 {
+			margin: 0;
+			font-size: px(40);
+			line-height: px(80);
+		}
+	}
+
+	h1 {
+		width: px(976);
+		margin: px(306) auto 0;
+		font-size: px(104);
+	}
+
+	h3 {
+		margin: px(70) 0;
+		font-size: px(48);
+	}
+
+	button {
+		padding: 0 px(56);
+	}
+}

@@ -1,0 +1,13 @@
+@import '../mobile';
+
+& {
+	nav {
+		justify-content: space-around;
+
+		h2 {
+			margin: 0;
+			font-size: px(40);
+			line-height: px(80);
+		}
+	}
+}

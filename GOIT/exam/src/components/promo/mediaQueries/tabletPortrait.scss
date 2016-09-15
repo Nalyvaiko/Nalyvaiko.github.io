@@ -6,11 +6,19 @@
 	nav {
 		justify-content: space-between;
 		padding: px(40) px(100);
+	}
 
-		h2 {
-			margin: 0;
-			font-size: px(40);
-			line-height: px(80);
+	h2 {
+		margin: 0;
+		font-size: px(40);
+		line-height: px(80);
+
+		&.promo__h2desktop {
+			display: block;
+		}
+
+		&.promo__h2mobile {
+			display: none;
 		}
 	}
 

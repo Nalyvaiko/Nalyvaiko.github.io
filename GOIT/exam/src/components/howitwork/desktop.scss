@@ -1,0 +1,38 @@
+@import 'mobile';
+
+& {
+  > div {
+    max-width: px(1524);
+		margin: px(128) auto 0;
+
+    main {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: px(70) auto 0;
+
+      article {
+        width: px(469);
+				margin: 0 px(20);
+
+        > div {
+          .carousel__item {
+            width: px(469);
+            height: px(632);
+
+            span {
+              font-size: px(16);
+            }
+
+            h1 {
+              font-size: px(40);
+            }
+
+            p {
+              font-size: px(21);
+            }
+          }
+        }
+      }
+    }
+  }
+}

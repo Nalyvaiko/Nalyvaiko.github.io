@@ -1,0 +1,12 @@
+@import '../mobile';
+
+& {
+    >div {
+        main {
+            article {
+                width: px(540);
+                margin: 0 px(10) px(20);
+            }
+        }
+    }
+}

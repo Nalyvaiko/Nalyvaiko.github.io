@@ -1,0 +1,28 @@
+@import '../mobile';
+
+& {
+    >div {
+        main {
+            article {
+                width: px(472);
+                margin: 0 px(10) px(20);
+
+                >div {
+                    .arrownext {
+                        margin: 0 px(32) px(550) 0;
+                    }
+
+                    .arrowprevious {
+                        margin: 0 0 px(550) px(32);
+                    }
+
+                    .carousel__item {
+                        height: px(801);
+                        width: px(472);
+                        padding: 0 px(40) px(20);
+                    }
+                }
+            }
+        }
+    }
+}

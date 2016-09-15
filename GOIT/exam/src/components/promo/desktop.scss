@@ -1,0 +1,29 @@
+@import "mobile";
+
+& {
+  height: px(1080);
+
+  nav {
+    justify-content: space-between;
+    padding: px(40) px(400);
+  }
+
+  h2 {
+    margin: 0;
+    line-height: px(80);
+
+    &.promo__h2desktop {
+      display: block;
+    }
+
+    &.promo__h2mobile {
+      display: none;
+    }
+  }
+
+  h1 {
+    margin: px(306) auto 0;
+		width: px(976);
+		font-size: px(86);
+	}
+}

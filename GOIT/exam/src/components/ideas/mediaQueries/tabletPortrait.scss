@@ -1,0 +1,32 @@
+@import '../mobile';
+
+& {
+    >div {
+        main {
+            ul {
+                li {
+                    img {
+                        width: px(450);
+                    }
+                }
+            }
+        }
+
+        footer {
+            div {
+                display: flex;
+                justify-content: center;
+
+                input {
+                    width: px(480);
+                    margin: 0;
+                }
+
+                button {
+                    width: px(320);
+                    margin: 0 px(20);
+                }
+            }
+        }
+    }
+}

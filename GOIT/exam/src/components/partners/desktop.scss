@@ -1,0 +1,39 @@
+@import 'mobile';
+
+& {
+  header {
+    h2 {
+      margin: px(56) px(78);
+    }
+  }
+
+  main {
+    display: flex;
+    max-width: px(1524);
+    margin: 0 auto;
+    padding: 0;
+    flex-wrap: wrap;
+    transition: .5s all ease-in;
+
+    section {
+      width: px(380);
+      height: px(460);
+      overflow: hidden;
+
+      h3 {
+        margin: 0 auto px(28);
+      }
+
+      p {
+        margin: 0 px(10);
+      }
+    }
+  }
+
+  footer {
+    button {
+      width: px(384);
+      border-radius: px(72);
+    }
+  }
+}

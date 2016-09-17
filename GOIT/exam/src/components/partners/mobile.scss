@@ -1,0 +1,120 @@
+& {
+  header {
+    h2 {
+      margin: px(56) px(78) 0;
+      font-size: px(44);
+      font-family: Montserrat, Arial, sans-serif;
+      color: $headerTextColor;
+      text-align: center;
+    }
+  }
+
+  main {
+    section {
+      margin: px(38) auto px(20);
+
+      > div {
+        position: relative;
+        width: px(240);
+        height: px(240);
+        margin: 0 auto px(42);
+
+        .profile__photo--first {
+          background: url('../img/partners/partner1.png');
+        }
+
+        .profile__photo--second {
+          background: url('../img/partners/partner2.png');
+        }
+
+        .profile__photo--third {
+          background: url('../img/partners/partner3.png');
+        }
+
+        .profile__photo--fourth {
+          background: url('../img/partners/partner4.png');
+        }
+
+        .profile__photo {
+          position: relative;
+          width: px(240);
+          height: px(240);
+          border-radius: 50%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+
+        .profile__icon--first {
+          background: #ff4e50 url('../img/partners/icon1.svg');
+        }
+
+        .profile__icon--second {
+          background: #1cd7ad url('../img/partners/icon3.svg');
+        }
+
+        .profile__icon--third {
+          background: #ffa507 url('../img/partners/icon2.svg');
+        }
+
+        .profile__icon--fourth {
+          background: #4e73db url('../img/partners/icon4.svg');
+        }
+
+        .profile__icon {
+          position: relative;
+          left: 100%;
+          width: px(66);
+          height: px(66);
+          margin: px(-66) 0 0 px(-66);
+          border: 4px solid $strokeColor;
+          border-radius: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      h3 {
+        margin: 0 px(100) px(28);
+        color: $headerTextColor;
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: px(28);
+        text-align: center;
+      }
+
+      p {
+        margin: 0 px(90);
+        font-size: px(28);
+        font-weight: 300;
+        font-family: robotothin, Arial, sans-serif;
+        color: $infoTextColor;
+        text-align: center;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    padding: px(38) px(36) 0;
+
+    button {
+      width: px(560);
+      margin: 0 auto;
+      border: 2px solid $buttonColor;
+      border-radius: 20px;
+      font-size: px(28);
+      line-height: px(72);
+      font-weight: 700;
+      font-family: Montserrat, Arial, sans-serif;
+      color: $buttonColor;
+      cursor: pointer;
+      background-color: $strokeColor;
+      outline: 0;
+
+      &:hover {
+        box-shadow: 0 0 1px 1px $buttonColor;
+      }
+    }
+  }
+
+}

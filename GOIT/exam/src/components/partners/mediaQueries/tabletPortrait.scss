@@ -1,0 +1,30 @@
+@import '../mobile';
+
+& {
+  header {
+    h2 {
+      margin: px(56) px(78);
+    }
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 px(260);
+
+    section {
+      width: px(460);
+      height: px(480);
+
+      p {
+        margin: 0 px(30);
+      }
+    }
+  }
+
+  footer {
+    button {
+      width: px(384);
+    }
+  }
+}

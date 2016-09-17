@@ -1,0 +1,102 @@
+& {
+
+  > div {
+
+    h2 {
+      margin: px(90) auto px(40);
+      font-size: px(44);
+      font-family: Montserrat, Arial, sans-serif;
+      color: $headerTextColor;
+      text-align: center;
+    }
+
+    main {
+
+      ul {
+        width: px(600);
+        margin: 0 auto;
+
+        li {
+          position: relative;
+          margin-bottom: px(10);
+          cursor: pointer;
+
+          div {
+            position: absolute;
+            width: 100%;
+            height: calc(100% - 4px);
+            border-radius: 4px;
+            background: $glassColor;
+
+            p {
+              position: relative;
+              margin: px(-22) px(50) 0;
+              top: 50%;
+              width: 80%;
+              font-family: Montserrat, Arial, sans-serif;
+              font-size: px(36);
+              color: $ideaTextColor;
+              text-align: center;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+          }
+
+          img {
+            width: px(600);
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+
+    footer {
+
+      h3 {
+        font-family: robotothin, Arial, sans-serif;
+        font-size: px(36);
+        color: $headerTextColor;
+        text-align: center;
+      }
+
+      div {
+        padding: px(64) 0 0;
+
+        input {
+          display: block;
+          margin: 0 auto;
+          padding: 0 px(30);
+          width: px(560);
+          height: px(80);
+          font-family: robotothin, Arial, sans-serif;
+          font-size: px(28);
+          color: $inputFontColor;
+          border: 1px solid $searchBorderColor;
+          border-radius: 4px;
+          box-shadow: 0 1px 0 $searchShadowColor;
+          outline: 0;
+        }
+
+        button {
+          display: block;
+          margin: px(18) auto 0;
+          width: px(560);
+          height: px(80);
+          font-size: px(28);
+          font-family: Montserrat, Arial, sans-serif;
+          color: $ideaTextColor;
+          cursor: pointer;
+          background-color: $searchButtonBackgroundColor;
+          border-radius: px(40);
+          border: 0;
+          outline: 0;
+
+          &:hover {
+            color: $headerTextColor;
+          }
+        }
+      }
+    }
+  }
+}

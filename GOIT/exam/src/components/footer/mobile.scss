@@ -1,0 +1,64 @@
+& {
+  margin: px(80) 0 0;
+  border-top: 4px solid $borderColor;
+
+  h2 {
+    margin: px(38) auto 0;
+    font-size: px(32);
+    font-family: Montserrat, Arial, sans-serif;
+    color: $borderColor;
+    text-align: center;
+  }
+
+  div {
+
+    h3 {
+      margin: px(38) auto 0;
+      font-size: px(28);
+      font-family: Montserrat, Arial, sans-serif;
+      color: $ulHeaderColor;
+      text-align: center;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 px(15);
+        display: inline;
+
+        a {
+          font-size: px(28);
+          line-height: px(48);
+          font-family: robotothin, Arial, sans-serif;
+          font-weight: 300;
+          color: $ulLiColor;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    margin: px(38) auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      font-size: px(20);
+      font-family: Montserrat, Arial, sans-serif;
+      color: $designedColor;
+      text-transform: uppercase;
+    }
+
+    img {
+      margin: px(20) auto px(36);
+    }
+  }
+}

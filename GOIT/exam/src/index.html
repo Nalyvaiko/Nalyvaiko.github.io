@@ -28,7 +28,6 @@
       <h3>And find the perfect partner to fullfill it</h3>
       <button class="promo__button" type="button" name="button">Find your holiday partner</button>
     </header>
-
     <section class="howitwork">
       <div>
         <header>
@@ -119,7 +118,6 @@
         </main>
       </div>
     </section>
-
     <section class="partners">
       <header>
         <h2>Meet a partner for your best holiday</h2>
@@ -162,7 +160,6 @@
         <button>See other partners</button>
       </footer>
     </section>
-
     <section class="ideas">
       <div>
         <header>
@@ -176,7 +173,7 @@
           <h3>Hi! What are your holiday interests?</h3>
           <div>
             <input id="searchInput" placeholder="Enter your interests">
-            <button type="button" name="button">Search partners</button>
+            <button id="searchButton" type="button" name="button">Search partners</button>
           </div>
         </footer>
         <script type="text/template" id="search-template">
@@ -186,13 +183,31 @@
                 <div>
                   <p><%= Image[i].Title %></p>
                 </div>
-                <img src="<%= Image[i].MediaUrl %>" />
+                <img src="<%= Image[i].Thumbnail.MediaUrl %>" />
               </li>
             <% }
             }%>
         </script>
       </div>
     </section>
-
+    <footer class="footer">
+      <h2>URLAUBSGLÜCK</h2>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Partners</h3>
+      </div>
+      <section>
+        <span>Designed by</span>
+        <img src="img/footer/areto.png" alt="areto" />
+      </section>
+    </footer>
   </body>
 </html>

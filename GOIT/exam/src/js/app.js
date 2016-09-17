@@ -40,26 +40,43 @@ $(function() {
   });
 
   const defKeywords = 'sport health extreme games culture relaxation travelling';
+  const $searchInput = $('#searchInput');
+  const $searchButton = $('#searchButton');
+  const $gallery = $('.my-gallery-class');
 
-  let keywords = $('#searchInput').val().length > 0 ? $('#searchInput').val() : defKeywords;
+  getImages(defKeywords);
 
-  $.ajax({
-    // async: false,
-    url: 'https://api.datamarket.azure.com/Bing/Search/v1/Composite?Sources=%27Image%27&$format=json&$top=15&$skip=15&Query=%27'+ keywords + '%27',
-    headers: {
-      'Authorization': 'Basic ' + btoa('MbfQyJYgDJkVhKwyyV/dJqFoNrxhauqxCSa7+/udzmU=:MbfQyJYgDJkVhKwyyV/dJqFoNrxhauqxCSa7+/udzmU=')
-  	},
-    success: function(json) {
-      let data = json.d.results[0];
-      console.log(data);
-      renderList(data);
-      loadMasonry();
+  $searchButton.on('click', function() {
+    newSearch();
+  });
+
+  $searchInput.on('keypress', function(e) {
+    if (e.which === 13) {
+      newSearch();
     }
   });
 
-  function loadMasonry() {
-    let $gallery = $('.my-gallery-class');
+  function newSearch() {
+    let keywords = $searchInput.val().length > 0 ? $searchInput.val() : defKeywords;
+    $gallery.masonry('destroy');
+    getImages(keywords);
+  };
 
+  function getImages(keywords) {
+    $.ajax({
+      url: 'https://api.datamarket.azure.com/Bing/Search/v1/Composite?Sources=%27Image%27&$format=json&$top=15&$skip=15&Query=%27'+ keywords + '%27',//&ImageFilters=%27Size%3aSmall%27',
+      headers: {
+        'Authorization': 'Basic ' + btoa('MbfQyJYgDJkVhKwyyV/dJqFoNrxhauqxCSa7+/udzmU=:MbfQyJYgDJkVhKwyyV/dJqFoNrxhauqxCSa7+/udzmU=')
+    	},
+      success: function(json) {
+        let data = json.d.results[0];
+        console.log(data);
+        renderList(data);
+      }
+    });
+  };
+
+  function loadMasonry() {
     $gallery.imagesLoaded(function() {
       $gallery.masonry({
         itemSelector : '.grid-item',
@@ -67,7 +84,8 @@ $(function() {
         percentPosition: true,
         fitWidth: true,
         gutter: 10
-      })
+      });
+      $gallery.masonry('layout');
     })
   };
 
@@ -76,6 +94,7 @@ $(function() {
     let $searchTmpl = $('#search-template').html();
     let $tmpl = _.template($searchTmpl);
     $list.html($tmpl(data));
+    loadMasonry();
   };
 
 });

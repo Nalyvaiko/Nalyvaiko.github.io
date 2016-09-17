@@ -1,0 +1,56 @@
+@import "mobile";
+
+& {
+
+  > div {
+    max-width: px(1880);
+    margin: 0 auto;
+
+    h2 {
+      margin: px(180) auto px(60);
+      font-size: px(36);
+    }
+
+    main {
+
+      ul {
+        width: px(1880);
+        margin: 0 auto;
+
+        li {
+
+          img {
+            width: px(500);
+          }
+        }
+      }
+    }
+
+    footer {
+
+      h3 {
+        font-size: px(27);
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+
+        input {
+          margin: 0;
+          width: px(384);
+          height: px(64);
+          font-size: px(23);
+        }
+
+        button {
+          margin: 0 px(20);
+          width: px(264);
+          height: px(64);
+          font-size: px(23);
+          border-radius: px(32);
+        }
+      }
+    }
+  }
+}

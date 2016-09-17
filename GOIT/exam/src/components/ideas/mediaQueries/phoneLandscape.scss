@@ -1,17 +1,15 @@
 @import '../mobile';
 
 & {
-    >div {
-        main {
-            ul {
-                li {
-                    img {
-                        // border: 5px solid #000;
-                        width: px(450);
-                        // width: 200px;
-                    }
-                }
-            }
+  >div {
+    main {
+      ul {
+        li {
+          img {
+            width: px(450);
+          }
         }
+      }
     }
+  }
 }

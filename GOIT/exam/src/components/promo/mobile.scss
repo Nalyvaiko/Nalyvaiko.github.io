@@ -5,6 +5,8 @@
   font-family: Montserrat, Arial, sans-serif;
   color: $linkColor;
   text-align: center;
+  behavior: url('../lib/pie/PIE.htc');
+  -pie-background: $backgroundColor url('../img/promo/background.png') no-repeat center;
 
   nav {
     padding: px(40) 0;
@@ -17,6 +19,7 @@
         padding: px(16) px(36);
         border: 2px solid $linkBorderColor;
         border-radius: px(36);
+        behavior: url('../lib/pie/PIE.htc');
         color: $linkColor;
         font-size: px(28);
         font-weight: 700;
@@ -66,6 +69,7 @@
     border: 0;
     outline: 0;
     border-radius: px(40);
+    behavior: url('../lib/pie/PIE.htc');
     font-size: px(28);
     line-height: px(80);
     font-weight: 700;

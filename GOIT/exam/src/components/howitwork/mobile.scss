@@ -26,6 +26,7 @@
         > div {
 
           &.carousel {
+            behavior: url('../lib/pie/PIE.htc');
             position: relative;
             overflow: hidden;
             height: auto;
@@ -39,6 +40,7 @@
           }
 
           .carousel__item {
+            behavior: url('../lib/pie/PIE.htc');
             width: px(600);
             height: px(480);
             display: flex;
@@ -80,14 +82,20 @@
 
             &.carousel__item--step1 {
               background-image: url('../img/howitwork/step1.png');
+              behavior: url('../lib/pie/PIE.htc');
+              -pie-background: url('../img/howitwork/step1.png');
             }
 
             &.carousel__item--step2 {
               background-image: url('../img/howitwork/step2.png');
+              behavior: url('../lib/pie/PIE.htc');
+              -pie-background: url('../img/howitwork/step2.png');
             }
 
             &.carousel__item--step3 {
               background-image: url('../img/howitwork/step3.png');
+              behavior: url('../lib/pie/PIE.htc');
+              -pie-background: url('../img/howitwork/step3.png');
             }
           }
 
@@ -116,11 +124,15 @@
             margin: 0 0 px(36) px(32);
             background: url('../img/howitwork/arrow_previous.png') no-repeat center;
             background-size: contain;
+            behavior: url('../lib/pie/PIE.htc');
+            -pie-background: url('../img/howitwork/arrow_previous.png') no-repeat center;
           }
           .arrownext {
             margin: 0 px(32) px(36) 0;
             background: url('../img/howitwork/arrow_next.png') no-repeat center;
             background-size: contain;
+            behavior: url('../lib/pie/PIE.htc');
+            -pie-background: url('../img/howitwork/arrow_next.png') no-repeat center;
           }
         }
       }

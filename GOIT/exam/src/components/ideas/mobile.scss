@@ -26,6 +26,7 @@
             width: 100%;
             height: calc(100% - 4px);
             border-radius: 4px;
+            behavior: url('../lib/pie/PIE.htc');
             background: $glassColor;
 
             p {
@@ -42,10 +43,11 @@
               overflow: hidden;
             }
           }
-          
+
           img {
             width: px(600);
             border-radius: 4px;
+            behavior: url('../lib/pie/PIE.htc');
           }
         }
       }
@@ -76,6 +78,7 @@
           border-radius: 4px;
           box-shadow: 0 1px 0 $searchShadowColor;
           outline: 0;
+          behavior: url('../lib/pie/PIE.htc');
         }
 
         button {
@@ -89,6 +92,7 @@
           cursor: pointer;
           background-color: $searchButtonBackgroundColor;
           border-radius: px(40);
+          behavior: url('../lib/pie/PIE.htc');
           border: 0;
           outline: 0;
 

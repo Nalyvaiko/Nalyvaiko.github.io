@@ -27,6 +27,16 @@ gulp.task('json', function() {
              .pipe(gulp.dest('dist/js'));
 });
 
+gulp.task('lib', function() {
+  return gulp.src('src/lib/**/*')
+             .pipe(gulp.dest('dist/lib'));
+});
+
+gulp.task('ico', function() {
+  return gulp.src('src/*.ico')
+             .pipe(gulp.dest('dist'));
+});
+
 gulp.task('scripts', function() {
   return gulp.src('src/js/*.js')
              .pipe(babel({presets: 'es2015'}))
@@ -90,7 +100,7 @@ gulp.task('clear', function() {
 // });
 
 gulp.task('default', ['clean', 'clear'], function() {
-  gulp.start('pages', 'sass', 'scripts', 'img', 'fonts');
+  gulp.start('pages', 'sass', 'scripts', 'img', 'fonts', 'lib', 'ico');
 });
 
 gulp.task('watch', ['browser-sync'], function() {

@@ -34,6 +34,7 @@
     button {
       width: px(384);
       border-radius: px(72);
+      behavior: url('../lib/pie/PIE.htc');
     }
   }
 }

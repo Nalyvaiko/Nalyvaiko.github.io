@@ -1,2 +1,2 @@
 # Nalyvaiko.github.io
-Homework
+My projects and homework

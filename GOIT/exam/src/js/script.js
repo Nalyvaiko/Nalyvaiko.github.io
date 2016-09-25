@@ -5,7 +5,6 @@ owl.owlCarousel({
     loop: true,
     items:1,
     nav:true,
-    // navText: ['<span class="sliders__controls">&lt;</span>','<span class="sliders__controls">&gt;</span>'],
     navText: ['<button class="sliders__controls previous"></button>','<button class="sliders__controls next"></button>']
 });
 

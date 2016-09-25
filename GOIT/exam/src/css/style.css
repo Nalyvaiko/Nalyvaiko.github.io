@@ -229,11 +229,10 @@
     .sliders__innerblock-img {
       height: 300px; } }
 
-.owl-controls button {
+.sliders__controls {
+  display: block;
   width: 24px;
-  height: 43px;
-  border: 0;
-  outline: 0; }
+  height: 43px; }
 
 .previous {
   background: url("../img/arrow_previous.png") no-repeat center;

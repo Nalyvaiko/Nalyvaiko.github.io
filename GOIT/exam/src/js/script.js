@@ -5,7 +5,7 @@ owl.owlCarousel({
     loop: true,
     items:1,
     nav:true,
-    navText: ['<button class="sliders__controls previous"></button>','<button class="sliders__controls next"></button>']
+    navText: ['<div class="sliders__controls previous"></div>','<div class="sliders__controls next"></div>']
 });
 
 var grid = $('.holiday__grid');

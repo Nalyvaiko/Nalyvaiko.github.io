@@ -194,13 +194,10 @@ $semitablet: 480px;
 // 	&:hover{color:#fff;};
 // }
 
-.owl-controls {
-	& button {
-		width: 24px;
-		height: 43px;
-		border: 0;
-		outline: 0;
-	}
+.sliders__controls {
+	display: block;
+	width: 24px;
+	height: 43px;
 }
 
 .previous {

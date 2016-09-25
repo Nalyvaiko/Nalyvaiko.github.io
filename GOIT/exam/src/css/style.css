@@ -229,13 +229,19 @@
     .sliders__innerblock-img {
       height: 300px; } }
 
-.sliders__controls {
-  display: block;
-  font: 60px serif, sans-serif;
-  color: rgba(255, 255, 255, 0.4);
-  line-height: 56px; }
-  .sliders__controls:hover {
-    color: #fff; }
+.owl-controls button {
+  width: 24px;
+  height: 43px;
+  border: 0;
+  outline: 0; }
+
+.previous {
+  background: url("../img/arrow_previous.png") no-repeat center;
+  background-size: contain; }
+
+.next {
+  background: url("../img/arrow_next.png") no-repeat center;
+  background-size: contain; }
 
 .partners {
   padding-top: 91px;

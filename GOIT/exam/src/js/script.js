@@ -1,11 +1,12 @@
 $(document).ready(function() {
- 
+
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     loop: true,
     items:1,
     nav:true,
-    navText: ['<span class="sliders__controls">&lt;</span>','<span class="sliders__controls">&gt;</span>'],
+    // navText: ['<span class="sliders__controls">&lt;</span>','<span class="sliders__controls">&gt;</span>'],
+    navText: ['<button class="sliders__controls previous"></button>','<button class="sliders__controls next"></button>']
 });
 
 var grid = $('.holiday__grid');
@@ -37,7 +38,7 @@ function search(){
         },
         success: function(data){
 
-            var hits = data.hits;     
+            var hits = data.hits;
             if (hits.length == 0){
             	grid.html('<figure class="holiday__grid-item--error grid-item"><img class="holiday__grid-img" src="img/404.png" alt="error"></figure>');
            		return;
@@ -48,10 +49,10 @@ function search(){
 	                var tags = hits[i].tags;
 	               if (i == 4 || i == 5){
 		  			grid.append('<figure class="holiday__grid-item--width2 grid-item--width2"><img class="holiday__grid-img" src="' + url + '"><figcaption class="holiday__grid-text">' + tags + '</figcaption></figure>' );
-		  			} else 
-		  			grid.append('<figure class="holiday__grid-item grid-item"><img class="holiday__grid-img" src="' + url + '"><figcaption class="holiday__grid-text">' + tags + '</figcaption></figure>' );     
+		  			} else
+		  			grid.append('<figure class="holiday__grid-item grid-item"><img class="holiday__grid-img" src="' + url + '"><figcaption class="holiday__grid-text">' + tags + '</figcaption></figure>' );
             		}
-            }       
+            }
 
         },
     });

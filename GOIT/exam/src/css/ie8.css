@@ -1,0 +1,15 @@
+.head__login-btn, 
+.head__login-btn--find, 
+.head__login-btn--find, 
+.sliders__innerblock-btn,
+.partners__btn,
+.holiday__grid-img, 
+.search__input,
+.search__btn,
+.sliders__innerblock-img{
+	position: relative;
+	behavior: url('css/pie.htc');
+}
+.sliders__innerblock{
+	behavior: url('css/pie.htc');
+}

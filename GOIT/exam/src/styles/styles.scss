@@ -1,0 +1,398 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+@import 'fonts';
+
+$montserratBold: 'montserrat-bold';
+$montserratRegular: 'montserrat-regular';
+$robotoLight: 'roboto-light';
+$red: #ff4e50;
+$desctop: 960px;
+$tablet: 768px;
+$semitablet: 480px;
+@mixin clearfix {&:after{display: block;content: '';display: block;}};
+@mixin font($px, $font, $color){
+	font: $px $font, sans-serif;
+	color: $color;
+}
+@mixin respond-to ($media) {
+	@if $media == $semitablet {
+		@media screen and (max-width: $semitablet) {@content;}
+	}
+	@else if $media == $tablet {
+		@media screen and (max-width: $tablet) {@content;}
+	}
+	@else if $media == $desctop {
+		@media screen and (max-width: $desctop) {@content;}
+	}
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	@include respond-to ($desctop){max-width: $desctop;width: 100%;};
+	@include respond-to ($tablet) {max-width: $tablet;}
+	@include respond-to ($semitablet){max-width: $semitablet;}
+}
+
+.head {
+	padding-top: 39px;
+	background: url('../img/logo.jpg') center top no-repeat; 
+	background-size: cover;
+	@include respond-to ($desctop){width: 100%;}
+}
+.head__logo{
+	float: left;
+	margin: 7px 0 0 10px;
+	letter-spacing: 1px;
+	@include clearfix;
+	@include respond-to ($tablet){
+		margin: 150px auto 0px;
+		width: 180px;
+		float: none;
+	}
+}
+.head__logo-link{
+	@include font(20px, $montserratBold, #fff);
+}
+.head__logo-link--footer{
+	display: block;
+	color: $red;
+	font-size: 17px;
+    margin: 5px 0 0 10px;
+    @include respond-to($tablet){margin: 0;}
+
+}
+.head__login{
+	float: right;
+	@include clearfix;
+	margin-right:  12px;
+	@include respond-to ($tablet){
+		margin: 40px auto;
+		width: 180px;
+		float: none;
+	}
+}
+.head__login-link{
+	@include font(14px, $montserratBold, #fff);
+	display: inline-block;
+	padding: 7px 15px;
+}
+.head__login-btn {
+	@extend .head__login-link;
+	border-radius: 20px;
+	border: 2px solid #fff;
+	background: transparent;
+	 transition:all .4s,cubic-bezier(1, -1.21, 0, 2.63); 
+	&:hover{border: 2px solid $red;transform: rotateX(360deg); };
+}
+
+.head__login-btn--find{
+	border: 2px solid $red;
+	border-radius: 22px;
+	background: $red;	
+	padding: 9px 20px;
+	transition: transform .3s;
+	&:hover{transform: scale(1.07);};
+	@include respond-to ($semitablet){text-align: center;width: 100%;}	
+}
+.head__main{
+	width: 500px;
+	margin: 0 auto;
+	padding: 141px 0 234px 0;
+	text-align: center;
+	.head__main-title{
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		@include font(52px, $montserratBold, #fff);
+		@include respond-to ($semitablet){font-size: 30px;}
+	}
+	@include respond-to ($tablet){padding: 40px 0;}
+	@include respond-to ($semitablet){width: 320px;}
+	.head__main-subtitle{
+		margin-bottom: 34px;
+		@include font(24px, $robotoLight, #fff);
+		@include respond-to ($semitablet) {font-size: 18px;}
+	}		
+}
+
+.sliders{
+	padding-top: 94px;
+}
+.sliders__title{
+	font: 22px $montserratBold;
+	color: #000;
+	text-align: center;
+}
+.sliders__block { 
+	margin: 34px 8px 0 9px;
+	width: 300px;
+	position: relative;
+	@include respond-to($desctop){width: 30%;}
+	@include respond-to($tablet){
+		width: 300px;
+		margin: 20px auto;
+		.sliders__outerblock {float:none;}
+	}
+	@include respond-to ($semitablet) {height: 300px;}	
+}
+.sliders__innerblock {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 400px;
+	z-index: 1;
+	background: linear-gradient(transparent, rgba(0,0,0,.6));
+	border-radius: 10px;
+
+	@include respond-to($desctop){width: 100%;}		
+	@include respond-to ($semitablet) {height: 300px;}
+}
+.sliders__innerblock-btn{
+	@extend .head__login-btn--find;
+	@include font(9px, $montserratRegular, #fff);
+	padding: 4px 6px 2px 12px;
+	margin: 225px 0 14px 20px;
+    display: inline-block;
+	letter-spacing: 3px;
+	text-transform: uppercase;		
+	@include respond-to($tablet){margin-top: 210px;}	
+	@include respond-to ($semitablet) {margin-top: 135px;width: initial;}
+}
+.sliders__innerblock-btn--step2{
+	margin: 260px 0 16px 20px;
+	@include respond-to ($semitablet) {margin-top: 150px;}
+}
+.sliders__innerblock-title{
+	margin: 0 0 7px 20px;
+	letter-spacing: .6px;
+	@include font(23px, $montserratBold, #fff);
+}
+.sliders__innerblock-subtitle{
+    width: 90%;
+    margin: 0 20px;
+    line-height: 4px;
+	@include font(14px, $robotoLight, #ccc);
+}
+.sliders__innerblock-img {
+	border-radius: 10px;
+	margin-right: 10px;
+	@include respond-to ($desctop) {height: 400px;}
+	@include respond-to ($semitablet) {height: 300px;}
+}
+.sliders__controls {
+	display: block;
+	@include font(60px, serif, rgba(255,255,255,.4))
+	line-height: 56px;
+	&:hover{color:#fff;};
+}
+
+.partners{
+	padding-top: 91px;
+	margin-bottom: 90px;
+}
+.partners__title {
+	@extend .sliders__title;
+	@include respond-to($tablet){margin-bottom: 32px;}
+}
+.partners__section {
+	margin-top: 32px;
+	overflow: hidden;
+	@include respond-to ($desctop){width: 500px;margin: 0 auto;}
+	@include respond-to ($tablet){width: 300px;}
+}
+.partners__block{
+	text-align: center;
+	float: left;
+	width: 225px;
+	margin-right: 5px;
+	margin-left: 10px;
+	@include clearfix;
+	@include respond-to ($tablet){width: 300px;margin: 20px auto 50px;}
+}
+.partners__photo{
+	display: block;
+	margin: 0 auto;
+}
+.partners__name {
+	@extend .head__login-link;
+	margin: 7px 3px 5px 0px;
+	display: block;
+	color: #000;
+}
+.partners__text {
+	@extend .sliders__innerblock-subtitle;
+	line-height: 17px;
+	width: 220px;
+	margin: 0 auto;
+}
+.partners__search{
+	margin: 0 auto;
+	width: 200px;
+	display: block;
+	@include respond-to ($semitablet){width: 80%;}
+}
+.partners__btn{
+	@extend .head__login-btn;
+    padding: 11px 29px 8px 27px;
+    margin-left: 5px;
+    margin-top: 32px;
+    border: 2px solid $red;
+    color: $red;
+	@include respond-to ($semitablet){
+		margin-left: 0;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.holiday{
+	overflow: hidden;
+	padding-top: 6px;
+	margin-bottom: 75px;
+}
+.holiday__title{
+	@extend .sliders__title;
+	margin-bottom: 33px;
+}
+.holiday__grid-item {
+	width: 31%;
+	float: left;
+	height: 310px;
+	margin: 0 13px 20px 9px;
+	@include clearfix;
+	position: relative;
+	@include respond-to ($desctop) {width: 30%;}
+	@include respond-to ($tablet) {width: 95%;}
+}
+.holiday__grid-item--width2 { 
+	@extend .holiday__grid-item; 
+	width: 64%; 
+	@include respond-to ($desctop) {width: 63%;}
+	@include respond-to ($tablet) {width: 95%;}
+}
+.holiday__grid-img {
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
+}
+.holiday__grid-text {
+	@include font(16px, $montserratBold, #fff);
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    text-align: center;
+}
+.holiday__grid-item--error {
+	height: 250px;
+	.holiday__grid-img {
+		display: block; 
+		width: 350px; 
+		margin: 0 auto;	
+	}
+}
+
+.search{
+	margin-bottom: 84px;
+}
+.search__title{
+	@extend .sliders__title;
+	margin-bottom: 5px;
+}
+.search__subtitle {
+	@extend .sliders__innerblock-subtitle;
+	font-size: 18px;
+	width: 280px;
+	margin: 31px auto 37px;
+}
+.search__form {
+	width: 411px;
+	margin: 0 auto;
+	@include respond-to ($semitablet){width: 90%;}
+}
+.search__input {
+	line-height: 39px;
+	height: 39px;
+	width: 220px;
+	margin-right: 6px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	@include respond-to ($semitablet){
+		width: 95%;
+		text-align: center;
+	}
+}
+.search__btn{
+	@extend .head__login-btn--find;
+	@include font(14px, $montserratBold, #fff);
+	@include respond-to ($semitablet){
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.footer{
+	padding: 30px 0;
+	border-top: 4px solid $red;
+	overflow: hidden;
+}
+.footer__block {
+	width: 160px;
+	float: left;
+	@include clearfix;
+	&:first-child{
+   		margin-right: 91px;
+		@include respond-to($desctop){margin-right: auto;}
+	};
+	@include respond-to ($desctop) {width: 190px;}
+	@include respond-to ($tablet)  {
+		width: 240px;
+		float: none;
+		margin: 0;
+		margin: 0 auto;
+		text-align: center;
+		.footer__item {
+			display: inline-block;
+			width: 45px;
+		    margin: 5px;
+		}
+		.footer__design{
+			margin: 10px;
+			text-align: center;
+		}
+	}
+}
+.footer__block--design{
+	float: right;
+	padding-top: 12px;
+	width: 120px;
+	margin-right: 1px;
+	margin-top: -4px;
+	@include respond-to($tablet){float: none;margin: 0 auto;}
+};
+.footer__title {
+	@extend .partners__name;
+	padding: 0;
+	margin-bottom: 16px;
+}
+.footer__item {
+	@extend .sliders__innerblock-subtitle;
+	height: 24px;
+    line-height: 10px;
+    margin-left: -1px;
+}
+.footer__design{
+	@include font(9px, $montserratBold, #ccc);
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 1.7px;
+	margin: 0px 0 7px 32px;
+}

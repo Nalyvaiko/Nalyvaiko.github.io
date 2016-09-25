@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>URLAUBSGLÜCK</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="lib/html5shiv/html5shiv.min.js"></script>
+      <script type="text/javascript" src="lib/ie7/IE9.js"></script>
+      <script type="text/javascript" src="lib/media/mediaq.min.js"></script>
+      <script type="text/javascript" src="lib/flexibility/flexibility.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/app.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel-core.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel-pagination.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+
+
+    <script type="text/javascript" src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/app.min.js"></script>
+  </head>
+  <body>
+    <header class="promo">
+      <nav class="promo__navigation">
+        <h2 class="promo__h2desktop">URLAUBSGLÜCK</h2>
+        <div>
+          <a class="promo__login" href="#">Log in</a>
+          <a class="promo__signup" href="#">Sign up</a>
+        </div>
+      </nav>
+      <h2 class="promo__h2mobile">URLAUBSGLÜCK</h2>
+      <h1>Share your holiday dreams</h1>
+      <h3>And find the perfect partner to fullfill it</h3>
+      <button class="promo__button" type="button" name="button">Find your holiday partner</button>
+    </header>
+    <section class="howitwork">
+      <div>
+        <header>
+          <h2>How Urlaubsglück works?</h2>
+        </header>
+        <main>
+          <article>
+            <div class="carousel carousel--step1">
+              <div class="carousel__items">
+                    <div class="carousel__item carousel__item--step1">
+                      <span>step 1</span>
+                      <h1>Sed leo enim, condimentum</h1>
+                      <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                    </div>
+                    <div class="carousel__item carousel__item--step2">
+                      <span>step 2</span>
+                      <h1>Morbi velit risus</h1>
+                      <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                    </div>
+                    <div class="carousel__item carousel__item--step3">
+                      <span>step 3</span>
+                      <h1>Sed leo enim, condimentum</h1>
+                      <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                    </div>
+              </div>
+              <div class="jcarousel-pagination left">
+                <button class="arrowprevious"></button>
+              </div>
+              <div class="jcarousel-pagination right">
+                <button class="arrownext"></button>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="carousel carousel--step2">
+              <div class="carousel__items">
+                    <div class="carousel__item carousel__item--step2">
+                      <span>step 2</span>
+                      <h1>Morbi velit risus</h1>
+                      <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                    </div>
+                    <div class="carousel__item carousel__item--step3">
+                      <span>step 3</span>
+                      <h1>Sed leo enim, condimentum</h1>
+                      <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                    </div>
+                    <div class="carousel__item carousel__item--step1">
+                      <span>step 1</span>
+                      <h1>Sed leo enim, condimentum</h1>
+                      <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                    </div>
+              </div>
+              <div class="jcarousel-pagination left">
+                <button class="arrowprevious"></button>
+              </div>
+              <div class="jcarousel-pagination right">
+                <button class="arrownext"></button>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="carousel carousel--step3">
+              <div class="carousel__items">
+                <div class="carousel__item carousel__item--step3">
+                  <span>step 3</span>
+                  <h1>Sed leo enim, condimentum</h1>
+                  <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                </div>
+                <div class="carousel__item carousel__item--step1">
+                  <span>step 1</span>
+                  <h1>Sed leo enim, condimentum</h1>
+                  <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                </div>
+                <div class="carousel__item carousel__item--step2">
+                  <span>step 2</span>
+                  <h1>Morbi velit risus</h1>
+                  <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                </div>
+              </div>
+              <div class="jcarousel-pagination left">
+                <button class="arrowprevious"></button>
+              </div>
+              <div class="jcarousel-pagination right">
+                <button class="arrownext"></button>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+    </section>
+    <section class="partners">
+      <header>
+        <h2>Meet a partner for your best holiday</h2>
+      </header>
+      <main>
+        <section>
+          <div class="profile">
+            <div class="profile__photo profile__photo--first"></div>
+            <div class="profile__icon profile__icon--first"></div>
+          </div>
+          <h3>Bradley Hunter</h3>
+          <p>Based in Chicago. I love playing tennis and loud music.</p>
+        </section>
+        <section>
+          <div class="profile">
+            <div class="profile__photo profile__photo--second"></div>
+            <div class="profile__icon profile__icon--second"></div>
+          </div>
+          <h3>Heather Walker</h3>
+          <p>I'm a happy person that loves cats and climbing on mountains.</p>
+        </section>
+        <section>
+          <div class="profile">
+            <div class="profile__photo profile__photo--third"></div>
+            <div class="profile__icon profile__icon--third"></div>
+          </div>
+          <h3>Lucas Marsha</h3>
+          <p>I get my inspiration from nature and objects around me. I have a passion to colours.</p>
+        </section>
+        <section>
+          <div class="profile">
+            <div class="profile__photo profile__photo--fourth"></div>
+            <div class="profile__icon profile__icon--fourth"></div>
+          </div>
+          <h3>Bradley Hunter</h3>
+          <p>Based in Chicago. I love playing tennis and loud music.</p>
+        </section>
+      </main>
+      <footer>
+        <button>See other partners</button>
+      </footer>
+    </section>
+    <section class="ideas">
+      <div>
+        <header>
+          <h2>Discover holiday activity ideas</h2>
+        </header>
+        <main>
+          <ul id="list" class="my-gallery-class"></ul>
+        </main>
+        <footer>
+          <h2>Discover holiday activity ideas</h2>
+          <h3>Hi! What are your holiday interests?</h3>
+          <div>
+            <input id="searchInput" placeholder="Enter your interests">
+            <button id="searchButton" type="button" name="button">Search partners</button>
+          </div>
+        </footer>
+        <script type="text/template" id="search-template">
+            <% for(var i = 0; i < 15; i++) {
+              if (Image[i]) {%>
+              <li class="grid-item">
+                <div>
+                  <p><%= Image[i].Title %></p>
+                </div>
+                <img src="<%= Image[i].Thumbnail.MediaUrl %>" />
+              </li>
+            <% }
+            }%>
+        </script>
+      </div>
+    </section>
+    <footer class="footer">
+      <h2>URLAUBSGLÜCK</h2>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Partners</h3>
+      </div>
+      <section>
+        <span>Designed by</span>
+        <img src="img/footer/areto.png" alt="areto" />
+      </section>
+    </footer>
+  </body>
+</html>

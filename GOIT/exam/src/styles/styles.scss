@@ -10,6 +10,7 @@ $montserratBold: 'montserrat-bold';
 $montserratRegular: 'montserrat-regular';
 $robotoLight: 'roboto-light';
 $red: #ff4e50;
+$white: #fff;
 $desctop: 960px;
 $tablet: 768px;
 $semitablet: 480px;
@@ -41,7 +42,7 @@ $semitablet: 480px;
 
 .head {
 	padding-top: 39px;
-	background: url('../img/logo.jpg') center top no-repeat; 
+	background: url('../img/logo.jpg') center top no-repeat;
 	background-size: cover;
 	@include respond-to ($desctop){width: 100%;}
 }
@@ -81,24 +82,24 @@ $semitablet: 480px;
 	@include font(14px, $montserratBold, #fff);
 	display: inline-block;
 	padding: 7px 15px;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	transition:all .4s,cubic-bezier(1, -1.21, 0, 2.63);
+	&:hover { border: 2px solid $white; }
 }
 .head__login-btn {
 	@extend .head__login-link;
-	border-radius: 20px;
-	border: 2px solid #fff;
 	background: transparent;
-	 transition:all .4s,cubic-bezier(1, -1.21, 0, 2.63); 
-	&:hover{border: 2px solid $red;transform: rotateX(360deg); };
 }
 
 .head__login-btn--find{
 	border: 2px solid $red;
 	border-radius: 22px;
-	background: $red;	
+	background: $red;
 	padding: 9px 20px;
 	transition: transform .3s;
 	&:hover{transform: scale(1.07);};
-	@include respond-to ($semitablet){text-align: center;width: 100%;}	
+	@include respond-to ($semitablet){text-align: center;width: 100%;}
 }
 .head__main{
 	width: 500px;
@@ -117,7 +118,7 @@ $semitablet: 480px;
 		margin-bottom: 34px;
 		@include font(24px, $robotoLight, #fff);
 		@include respond-to ($semitablet) {font-size: 18px;}
-	}		
+	}
 }
 
 .sliders{
@@ -128,7 +129,7 @@ $semitablet: 480px;
 	color: #000;
 	text-align: center;
 }
-.sliders__block { 
+.sliders__block {
 	margin: 34px 8px 0 9px;
 	width: 300px;
 	position: relative;
@@ -138,7 +139,7 @@ $semitablet: 480px;
 		margin: 20px auto;
 		.sliders__outerblock {float:none;}
 	}
-	@include respond-to ($semitablet) {height: 300px;}	
+	@include respond-to ($semitablet) {height: 300px;}
 }
 .sliders__innerblock {
 	box-sizing: border-box;
@@ -151,7 +152,7 @@ $semitablet: 480px;
 	background: linear-gradient(transparent, rgba(0,0,0,.6));
 	border-radius: 10px;
 
-	@include respond-to($desctop){width: 100%;}		
+	@include respond-to($desctop){width: 100%;}
 	@include respond-to ($semitablet) {height: 300px;}
 }
 .sliders__innerblock-btn{
@@ -161,8 +162,8 @@ $semitablet: 480px;
 	margin: 225px 0 14px 20px;
     display: inline-block;
 	letter-spacing: 3px;
-	text-transform: uppercase;		
-	@include respond-to($tablet){margin-top: 210px;}	
+	text-transform: uppercase;
+	@include respond-to($tablet){margin-top: 210px;}
 	@include respond-to ($semitablet) {margin-top: 135px;width: initial;}
 }
 .sliders__innerblock-btn--step2{
@@ -271,9 +272,9 @@ $semitablet: 480px;
 	@include respond-to ($desctop) {width: 30%;}
 	@include respond-to ($tablet) {width: 95%;}
 }
-.holiday__grid-item--width2 { 
-	@extend .holiday__grid-item; 
-	width: 64%; 
+.holiday__grid-item--width2 {
+	@extend .holiday__grid-item;
+	width: 64%;
 	@include respond-to ($desctop) {width: 63%;}
 	@include respond-to ($tablet) {width: 95%;}
 }
@@ -292,9 +293,9 @@ $semitablet: 480px;
 .holiday__grid-item--error {
 	height: 250px;
 	.holiday__grid-img {
-		display: block; 
-		width: 350px; 
-		margin: 0 auto;	
+		display: block;
+		width: 350px;
+		margin: 0 auto;
 	}
 }
 

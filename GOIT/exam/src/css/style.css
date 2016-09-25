@@ -92,16 +92,15 @@
   font: 14px "montserrat-bold", sans-serif;
   color: #fff;
   display: inline-block;
-  padding: 7px 15px; }
+  padding: 7px 15px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: all 0.4s, cubic-bezier(1, -1.21, 0, 2.63); }
+  .head__login-link:hover, .head__login-btn:hover, .partners__btn:hover, .partners__name:hover, .footer__title:hover {
+    border: 2px solid #fff; }
 
 .head__login-btn, .partners__btn {
-  border-radius: 20px;
-  border: 2px solid #fff;
-  background: transparent;
-  transition: all 0.4s, cubic-bezier(1, -1.21, 0, 2.63); }
-  .head__login-btn:hover, .partners__btn:hover {
-    border: 2px solid #ff4e50;
-    transform: rotateX(360deg); }
+  background: transparent; }
 
 .head__login-btn--find, .sliders__innerblock-btn, .search__btn {
   border: 2px solid #ff4e50;

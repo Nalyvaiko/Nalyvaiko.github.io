@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background: #f5f5f5 url('img/body-bg.jpg') top repeat-x;
+    font: 12px Arial;
+    color: #5f5d67;
+    line-height: 1.5;
+}
+
+.container {
+    width: 755px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 30px 0 0 0;
+}
+
+.logo {
+    margin: 0 auto 20px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    border-bottom: 3px solid #9dc5f0;
+    border-left: 1px solid #f3f3f3;
+    border-top: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+}
+
+nav ul li {
+    float: left;
+    border-left: 1px solid #f4f4f4;
+}
+
+nav ul li:first-child {
+    border: none;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 14px;
+    padding: 8px 25px;
+    color: #5f5d67;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+.main-content {
+    margin: 20px 0 0 0;
+    overflow: hidden;
+}
+
+.main-content-img {
+    margin: 0 0 20px 0;
+}
+
+.main-content h1 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-family: Times;
+    font-weight: normal;
+}
+
+.main-content p {
+    margin: 0 0 20px 0;
+
+}
+
+article {
+    float: left;
+    width: 420px;
+    padding: 30px 30px 32000px 30px;
+    margin: 0 0 -32000px 0;
+    background: #fff;
+}
+
+aside {
+    float: right;
+    width: 225px;
+    padding: 30px 10px 32000px 30px;
+    margin: 0 0 -32000px 0;
+    background: #fff;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+}
+
+.main-content aside h1 {
+    font-family: Georgia;
+}
+
+footer {
+    padding: 20px 0;
+    color: #5f5d67;
+}

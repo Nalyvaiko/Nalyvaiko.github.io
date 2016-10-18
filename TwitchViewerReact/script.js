@@ -98,6 +98,7 @@ const Viewer = React.createClass({
                 });
                 break;
         }
+        document.getElementById('search-field').value = "";
     },
 
     render: function() {
@@ -108,7 +109,7 @@ const Viewer = React.createClass({
                     <div className="online" onClick={this.handleDisplay}>OnLine</div>
                     <div className="offline" onClick={this.handleDisplay}>OffLine</div>
                 </div>
-                <input type="text" className="search-field" onChange={this.handleSearch} />
+                <input type="text" id="search-field" onChange={this.handleSearch} />
                 <ul className="channels-list">
                     {
                         this.state.channelsDisplay.map(function(el, i) {

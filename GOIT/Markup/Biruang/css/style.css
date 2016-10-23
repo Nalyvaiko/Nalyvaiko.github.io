@@ -1,0 +1,292 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+}
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+
+
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+    font-family: 'Roboto', sans-serif;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #7e7f84;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header-top {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+    .logo {
+        float: left;
+        font-size: 1.375rem;
+        font-family: 'Roboto Condenset', sans-serif;
+        text-transform: uppercase;
+    }
+    .contact-basket {
+        float: right;
+    }
+        .contact-basket p {
+            float: left;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+            .contact-basket p img {
+                margin: 0 3px 0 0;
+                vertical-align: middle;
+            }
+        .header-phone {
+            padding: 8px 0 0 0;
+        }
+        .header-basket {
+            margin: 0 0 0 20px;
+            padding: 7px 25px;
+            border: 1px solid #eee;
+        }
+            .header-basket a {
+                margin: 0 0 0 20px;
+                color: #7e7f84;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+            .header-basket a:hover {
+                color: #f45a40;
+            }
+
+.header-bottom {
+    padding: 10px 0;
+}
+    .menu {
+        float: left;
+    }
+        .menu li {
+            float: left;
+            margin: 0 30px 0 0;
+        }
+        .menu li a {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    .search-block {
+        float: left;
+        margin: 5px 0 0 0;
+    }
+        .search-btn {
+            float: left;
+            margin: 0 7px 0 0;
+        }
+        .search {
+            float: left;
+            padding: 0;
+            font-size: 0.875rem;
+            color: #7e7f84;
+            border: none;
+        }
+
+.my-slider {
+
+}
+    .my-slider ul li {
+        position: relative;
+        color: #f45a40;
+    }
+    .my-slider ul li h2,
+    .my-slider ul li p {
+        position: absolute;
+        top: 220px;
+        left: 30px;
+        font-size: 3.6875rem;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+    .my-slider ul li p {
+        top: 370px;
+        font-size: 0.875rem;
+        line-height: normal;
+        font-weight: normal;
+    }
+    .unslider-nav {
+        max-width: 1170px;
+        margin: 0 auto;
+        position: relative;
+        top: -40px;
+    }
+
+.posts {
+    margin-bottom: 50px;
+}
+
+    .posts article {
+        float: left;
+        width: 31.6%;
+        margin: 0 0 0 2.6%;
+    }
+    .posts article:first-child {
+        margin: 0;
+    }
+    .posts article img {
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    .posts article h2 {
+        margin: 20px 0;
+    }
+    .posts article h2 a {
+        color: #f45a40;
+        font-size: 1.375rem;
+        font-family: 'Roboto Condenset', sans-serif;
+        text-decoration: none;
+    }
+    .posts article h2 a:hover {
+        text-decoration: underline;
+    }
+    .posts article p {
+        font-size: 0.875rem;
+    }
+
+.products > h2 {
+    color: #67686d;
+    margin-bottom: 30px;
+    font-size: 1.375rem;
+    font-family: 'Roboto Condenset', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.products-wrapper {
+    margin-bottom: 60px;
+}
+    .products-wrapper article {
+        width: 23%;
+        margin-left: 2.66%;
+        float: left;
+    }
+    .products-wrapper article:first-child {
+        margin-left: 0;
+    }
+    .products-wrapper article > img {
+        display: block;
+        margin: 0 auto;
+    }
+    .product-description {
+        padding: 18px 18px 0 18px;
+        border: 1px solid #eee;
+    }
+    .product-description {
+        border-top: 0;
+    }
+    .product-description h2 {
+        margin-bottom: 5px;
+        color: #67686d;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+    }
+    .product-description h3 {
+        margin-bottom: 10px;
+        font-size: .875rem;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    .product-description p {
+        margin-bottom: 15px;
+        font-size: .625rem;
+    }
+    p.price-basket {
+        padding: 15px 0;
+        margin-bottom: 0;
+        color: #f45a40;
+        font-size: .875rem;
+        border-top: 1px solid #eee;
+    }
+    .price {
+        float: left;
+        font-weight: 700;
+    }
+    .basket-btn {
+        float: right;
+    }

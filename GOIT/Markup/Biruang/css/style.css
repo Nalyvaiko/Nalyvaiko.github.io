@@ -7,6 +7,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 	vertical-align: baseline;          /* приводим все к одной базовой линии */
 	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
 	font-size: 100%;                     /* размер шрифта всем одинаковый */
+	transition: all .3s;
 }
 a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
 	margin:0;
@@ -276,6 +277,9 @@ img{
         margin-bottom: 15px;
         font-size: .625rem;
     }
+	.description-col {
+		padding-bottom: 15px;
+	}
     p.price-basket {
         padding: 15px 0;
         margin-bottom: 0;
@@ -290,3 +294,290 @@ img{
     .basket-btn {
         float: right;
     }
+
+.about {
+	margin-bottom: 60px;
+}
+	.about article {
+		float: left;
+		width: 60%;
+	}
+	.about article h2 {
+		margin-bottom: 30px;
+		color: #67686d;
+		font-size: 1.325rem;
+		font-weight: bold;
+	}
+	.about article p {
+		margin-bottom: 25px;
+		font-size: .875rem;
+		font-style: italic;
+	}
+	.about .map {
+		float: right;
+		width: 35%;
+	}
+	.mapin {
+		position: relative;
+		padding-bottom: 75%; /*		450/600 (height/width map iframe)		*/
+		height: 0;
+		overflow: hidden;
+	}
+	.mapin iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+.subscribe {
+	padding: 30px 0;
+	color: #fff;
+	background: #f45a40;
+}
+	.subscribe h2 {
+		float: left;
+		font-size: 1.325rem;
+		text-transform: uppercase;
+	}
+	.subscribe h2 span {
+		font-weight: bold;
+	}
+	.subscribe-form {
+		float: right;
+	}
+		.email-inpt {
+			float: left;
+			width: 200px;
+			padding: 7px 20px;
+			font-size: .875rem;
+			text-transform: uppercase;
+			border: none;
+		}
+		.submit-inpt {
+			float: right;
+			margin-left: 20px;
+			padding: 7px 20px;
+			font-size: .875rem;
+			color: #fff;
+			text-transform: uppercase;
+			background: #ff674f;
+			border: none;
+			cursor: pointer;
+		}
+
+.footer {
+	padding: 40px 0;
+	background: #2a2d34;
+}
+	.footer-content article {
+		width: 23%;
+		margin-left: 2.66%;
+		float: left;
+	}
+	.footer-content article:first-child {
+		margin-left: 0;
+	}
+	.footer-content article > img {
+		display: block;
+		margin: 0 auto;
+	}
+	.footer h2 {
+		margin-bottom: 10px;
+		color: #fff;
+		font-size: 1.325rem;
+		font-family: 'Roboto Condensed', sans-serif;
+		text-transform: uppercase;
+	}
+	.footer p {
+		margin-bottom: 20px;
+		font-size: .875rem;
+	}
+	.footer h3 {
+		margin-bottom: 5px;
+		font-size: .875rem;
+	}
+	.footer h3 a {
+		color: #fff;
+		text-decoration: none;
+	}
+	.footer h3 a:hover {
+		color: #f45a40;
+	}
+	.support:first-child {
+		float: left;
+		margin-right: 3%;
+		width: 60%;
+	}
+	.support:last-child{
+		float: right;
+		width: 37%;
+	}
+	.support a {
+		display: block;
+		margin-bottom: 5px;
+		text-decoration: none;
+	}
+	.footer-email, .footer-text {
+		margin-bottom: 15px;
+		padding: 7px 15px;
+		width: 100%;
+		font-size: .75rem;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+		box-sizing: border-box;
+		border: none;
+	}
+	.footer-submit {
+		padding: 7px 20px;
+		font-size: .875rem;
+		color: #fff;
+		text-transform: uppercase;
+		background: #ff674f;
+		border: none;
+		cursor: pointer;
+	}
+
+@media screen and (max-width: 900px) {
+	.my-slider ul li h2 {
+        top: 150px;
+        font-size: 3rem;
+    }
+    .my-slider ul li p {
+        top: 270px;
+    }
+	.products-wrapper article {
+        width: 45%;
+        margin: 0 2.5% 30px;
+    }
+    .products-wrapper article:first-child {
+        margin: 0 2.5% 30px;
+    }
+	.products-wrapper article > img {
+        width: 100%;
+    }
+	.footer-content article {
+		width: 45%;
+        margin: 0 2.5% 30px;
+	}
+	.footer-content article:first-child {
+		margin: 0 2.5% 30px;
+	}
+	.subscribe h2 {
+		float: none;
+		margin: 0 0 20px;
+		text-align: center;
+	}
+	.subscribe-form {
+		float: none;
+		display: table; /*		что бы выровнять div по центру, не зная размеров блока		*/
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.my-slider ul li h2 {
+        top: 100px;
+        font-size: 2rem;
+    }
+    .my-slider ul li p {
+        top: 180px;
+		font-size: .8rem;
+    }
+	.search-block {
+		float: right;
+		margin-top: 10px;
+		padding: 5px 0 7px;
+        border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	.posts article {
+        float: none;
+		margin: 0 2.5% 30px 2.5%;
+        width: 95%;
+        margin: 0 2.5%;
+    }
+    .posts article:first-child {
+        margin: 0 2.5% 30px 2.5%;
+    }
+	.about article {
+		float: none;
+		width: 95%;
+		margin: 0 2.5% 30px 2.5%;
+	}
+	.about .map {
+		float: none;
+		width: 95%;
+		margin: 0 2.5% 30px 2.5%;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.my-slider ul li h2 {
+        top: 50px;
+        font-size: 1.275rem;
+    }
+    .my-slider ul li p {
+        top: 110px;
+    }
+	.products-wrapper article {
+		float: none;
+        width: 95%;
+        margin: 0 2.5% 30px;
+    }
+    .products-wrapper article:first-child {
+        margin: 0 2.5% 30px;
+    }
+	.footer-content article {
+		float: none;
+		width: 95%;
+        margin: 0 2.5% 30px;
+		overflow: hidden;
+	}
+	.footer-content article:first-child {
+		margin: 0 2.5% 30px;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.header-top {
+		padding: 10px 0;
+	}
+	.logo {
+        float: none;
+		text-align: center;
+		margin-bottom: 10px;
+    }
+    .contact-basket {
+        float: none;
+		display: table;
+		margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+	.my-slider ul li h2 {
+        top: 30px;
+        font-size: 1rem;
+    }
+    .my-slider ul li p {
+        top: 80px;
+		font-size: .75rem;
+    }
+	.email-inpt {
+		float: none;
+		width: 95%;
+		margin: 0 2.5% 20px;
+		box-sizing: border-box;
+	}
+	.submit-inpt {
+		float: none;
+		margin-left: 2.5%;
+	}
+}

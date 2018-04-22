@@ -146,9 +146,7 @@
   line-height: 39px;
   height: 39px;
   width: 220px;
-  margin-right: 6px;
   border: 1px solid #ccc;
-  border-radius: 5px;
   padding-left: 15px; }
   @media screen and (max-width: 480px) {
     .search__input {

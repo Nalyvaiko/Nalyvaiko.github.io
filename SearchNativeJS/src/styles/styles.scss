@@ -168,7 +168,6 @@ $semitablet: 480px;
 	height: 39px;
 	width: 220px;
 	border: 1px solid #ccc;
-	border-radius: 5px;
 	padding-left: 15px;
 	@include respond-to ($semitablet){
 		width: 95%;

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search IMG</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <!--[if  IE 8]>
+    <link rel="stylesheet" href="css/ie8.css">
+    <script src="js/ie8.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <section class="search">
+    <div class="wrapper">
+      <p class="search__subtitle">Hi! What are your interests?</p>
+      <form id="searchForm" action="#" class="search__form" autocomplete="off" autocompletesearch="history">
+        <div class="autocomplete">
+          <input id="searchInput" type="text" class="search__input" placeholder="Enter your interests">
+        </div>
+        <button id="searchButton" class="search__btn" type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+  <section class="images">
+    <div class="wrapper">
+      <h2 class="images__title">Discover activity ideas</h2>
+      <div class="images__grid grid">
+        <div class="images__grid-sizer"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__block">
+        <a class="head__logo-link head__logo-link--footer">SEARCHIMG</a>
+      </div>
+      <div class="footer__block footer__block--design">
+        <p class="footer__design">designed by</p>
+        <a href="#" class="footer__logo">Vitalii Nalyvaiko</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="js/main.min.js"></script>
+  <script src="service-worker.js"></script>
+</body>
+</html>

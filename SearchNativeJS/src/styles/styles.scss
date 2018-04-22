@@ -1,0 +1,276 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+  list-style: none;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+$Roboto: 'Roboto';
+$red: #ff4e50;
+$white: #fff;
+$desktop: 960px;
+$tablet: 768px;
+$semitablet: 480px;
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin font($px, $font, $color){
+	font: $px $font, sans-serif;
+	color: $color;
+}
+
+@mixin respond-to ($media) {
+	@if $media == $semitablet {
+		@media screen and (max-width: $semitablet) { @content; }
+	}
+	@else if $media == $tablet {
+		@media screen and (max-width: $tablet) { @content; }
+	}
+	@else if $media == $desktop {
+		@media screen and (max-width: $desktop) { @content; }
+	}
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	@include respond-to ($desktop) { max-width: $desktop; width: 100%; };
+	@include respond-to ($tablet) { max-width: $tablet; }
+	@include respond-to ($semitablet) { max-width: $semitablet; }
+}
+
+.images {
+	overflow: hidden;
+	padding-top: 6px;
+	margin-bottom: 75px;
+}
+.images__grid {
+  height: unset !important;
+}
+.images__title {
+	font: 22px $Roboto;
+	color: #000;
+	text-align: center; 
+	margin-bottom: 33px;
+}
+.images__grid-item {
+	width: 31%;
+	float: left;
+	height: 310px;
+  margin: 0 13px 20px 9px;
+  border-radius: 15px;
+  overflow: hidden;
+	@include clearfix;
+	position: relative;
+	@include respond-to ($desktop) {width: 30%;}
+  @include respond-to ($tablet) {width: 95%;}
+  &:hover {
+    .images__grid-img {
+      transform: scale(1.1);
+    }
+  }
+}
+.images__grid-item--width2 {
+	@extend .images__grid-item;
+	width: 64%;
+	@include respond-to ($desktop) {width: 63%;}
+	@include respond-to ($tablet) {width: 95%;}
+}
+.images__grid-img {
+	width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease-out;
+}
+.images__grid-text {
+	@include font(16px, $Roboto, #fff);
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  text-align: center;
+  z-index: -999;
+}
+.images__grid-item--error {
+	height: 250px;
+	.images__grid-img {
+		display: block;
+		width: 350px;
+		margin: 0 auto;
+	}
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #fff; 
+}
+
+.search {
+  margin-bottom: 84px;
+  & > .wrapper {
+    overflow: visible;
+  }
+}
+.search__title{
+	font: 22px $Roboto;
+	color: #000;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.search__subtitle {
+  line-height: 4px;
+	@include font(14px, $Roboto, #ccc);
+	font-size: 18px;
+	text-align: center;
+	margin: 31px auto 37px;
+}
+.search__form {
+  margin: 0 auto;
+  text-align: center;
+	@include respond-to ($semitablet){width: 90%;}
+}
+.search__input {
+	line-height: 39px;
+	height: 39px;
+	width: 220px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left: 15px;
+	@include respond-to ($semitablet){
+		width: 95%;
+		text-align: center;
+	}
+}
+.search__btn {
+	border: 2px solid $red;
+	border-radius: 22px;
+	background: $red;
+	padding: 9px 35px;
+  transition: all .3s;
+  @include font(16px, $Roboto, #fff);
+  font-weight: 700;
+	@include respond-to ($semitablet) {
+		width: 100%;
+		text-align: center;
+  }
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+.footer {
+	padding: 30px 0;
+	border-top: 4px solid $red;
+	overflow: hidden;
+}
+.footer__block {
+	width: 160px;
+	float: left;
+	@include clearfix;
+	&:first-child{
+   		margin-right: 91px;
+		@include respond-to($desktop) {
+      margin-right: auto;
+    }
+	};
+	@include respond-to ($desktop) {
+    width: 190px;
+  }
+	@include respond-to ($tablet) {
+		width: 240px;
+		float: none;
+		margin: 0;
+		margin: 0 auto;
+		text-align: center;
+		.footer__item {
+			display: inline-block;
+			width: 45px;
+		    margin: 5px;
+		}
+		.footer__design {
+			margin: 10px;
+			text-align: center;
+		}
+	}
+}
+.head__logo-link--footer{
+	display: block;
+  margin: 5px 0 0 10px;
+  @include font(17px, $Roboto, $red);
+  font-weight: 700;
+  @include respond-to($tablet) {
+    margin: 0;
+  }
+
+}
+.footer__block--design {
+	float: right;
+	padding-top: 12px;
+	width: 120px;
+	margin-right: 1px;
+	margin-top: -4px;
+	@include respond-to($tablet) {
+    float: none;
+    margin: 0 auto;
+  }
+};
+.footer__title {
+  margin: 7px 3px 16px 0px;
+  padding: 0;
+	display: block;
+  @include font(14px, $Roboto, #000);
+	border: 2px solid transparent;
+	border-radius: 20px;
+	transition:all .4s, cubic-bezier(1, -1.21, 0, 2.63);
+	&:hover {
+    border: 2px solid $white;
+  }
+}
+.footer__item {
+  @include font(14px, $Roboto, #ccc);
+  width: 90%;
+  margin: 0 20px 0 -1px;
+	height: 24px;
+  line-height: 10px;
+}
+.footer__design {
+	@include font(9px, $Roboto, #ccc);
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 1.7px;
+	margin: 0px 0 7px 32px;
+}
